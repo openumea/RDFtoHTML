@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+				xmlns:dct="http://purl.org/dc/terms/"
+				xmlns:dcat="http://www.w3.org/ns/dcat#"
+				xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:adms="http://www.w3.org/ns/adms#"
+				xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+				xmlns:schema="http://schema.org/"
+				xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+				xmlns:skos="http://www.w3.org/2004/02/skos/core">
+				
+<!-- Description of catalog -->				
+<rdf:Description rdf:about='http://opennorth.se/datasets/dcat#catalog'>  
+		<rdf:type rdf:resource='http://www.w3.org/ns/dcat#Catalog'></rdf:type>
+		<dct:title xml:lang='en'>OpenNorth DCAT Catalog </dct:title>
+		<dct:title xml:lang='sv-SE'>OpenNorths DCAT katalog </dct:title>
+		<dct:description xml:lang='en'>Datasets published by OpenNorth (The municipalities of Umeå and Skellefteå, the university of Umeå and the technical university of Luleå)></dct:description>
+		<dct:description xml:lang='sv-SE' dct:description='Dataset publicerade av OpenNorth (Umeå och Skellefteå kommun, Umeå universitet samt Luleå universitet)'></dct:description>
+		<dcat:themeTaxonomy rdf:resource="http://eurovoc.europa.eu/"></dcat:themeTaxonomy>
+		<dct:language rdf:resource= 'http://id.loc.gov/vocabulary/iso639-1/sv'></dct:language>
+		<dct:publisher rdf:nodeID="_on"> </dct:publisher>
+		<dct:issued>2015-02-26</dct:issued>
+		<dct:modified>2014-02-26</dct:modified>
+		<dcat:landingPage > 'http:///opennorth.se/datasets/dcat' </dcat:landingPage >
+		<dct:license rdf:resource='http://creativecommons.org/publicdomain/zero/1.0/'></dct:license>
+		<dcat:dataset rdf:resource='http://opennorth.se/datasets/dcat#ds1'></dcat:dataset>  
+	</rdf:Description>
+<!-- Description of dataset containing Air Quality measurements -->			
+<rdf:Description rdf:about='http://opennorth.se/datasets/dcat#ds1'>
+		<rdf:type rdf:resource='http://www.w3.org/ns/dcat#Dataset' />
+		<dcat:theme rdf:nodeID='_conc'></dcat:theme>
+		<dct:title xml:lang="en">Linked Open Data about Air Quality measured by  the city of Umeå </dct:title>
+		<dct:title xml:lang="sv-SE">Länkade Öppna Data som innehåller mätdata avseende luftkvaliteten i Umeå</dct:title>
+		<dct:description xml:lang="en">This dataset contains levels of PM10 an NO2 in the air in the city center of Umeå. Measurements are published once each 15 minutes. The values are averages of the measurements that has been done during the latest 60 minutes. The data is not reviewed before it is published, hence the quality of the data can not be guaranteed.</dct:description>
+		<dct:description xml:lang="sv-SE">Mätstationen levererar data var 15:e minut. Detta värde är ett genomsnitt av de mätningar som gjorts under de senat 60 minuterna. Värden används för pålarmning/avlarming av Trafikverkets infartsskyltar som finns placerade vid infarterna till Umeå. Vid fel i mätutrustningen levereras inga värden, det blir m a o brott i tidsserien. Värden med högst id är det senast uppmätta och registrerade värdet.
+Data är inte kvalitetssäkrat. Mätfel kan förekomma på grund av fel i eller felaktig kalibrering av mätutrustningen. Extremvärden kan visas om t ex gatsopning genomförs i närheten av mätutrustningen.</dct:description>
+		<dct:spatial rdf:nodeID='_spat'> </dct:spatial>
+		<adms:contactPoint rdf:nodeID='_uk'></adms:contactPoint>
+		<dct:publisher rdf:nodeID ='_uk'></dct:publisher>
+		<dct:keywords rdf:nodeID='_kw'></dct:keywords>
+		<dct:distribution rdf:nodeID='_dist'></dct:distribution>
+		<dct:issued>2014-11-26</dct:issued>
+		<dct:modified>2014-11-26</dct:modified>
+		<dct:language rdf:resource= 'http://id.loc.gov/vocabulary/iso639-1/sv.'></dct:language>
+		<dct:conformsTo xml:lang="sv-SE" rdf:resource= 'http://wiki.opennorth.se/' > </dct:conformsTo>
+		<dct:temporal rdf:nodeID='_period'></dct:temporal>
+		<dct:Frequency rdf:resource= 'http://purl.org/cld/freq/continuous'></dct:Frequency>
+		<dct:license xml:lang="sv-SE" rdf:resource='http://creativecommons.org/publicdomain/zero/1.0/'></dct:license>
+		<dcat:landingPage > '"http://wiki.opennorth.se/index.php/Luftkvalitet_(beskrivning)" </dcat:landingPage>
+	</rdf:Description>
+<rdf:Description rdf:about="http://opennorth.se/datasets/dcat#dist1">
+	<rdfs:label>distributions</rdfs:label>		  
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"></rdf:type>
+	<dct:title xml:lang="en">Linked Data</dct:title>
+	<dct:description xml:lang="en">Provides browsable linked data and a download link.</dct:description>
+        <dcat:accessURL rdf:resource='http://opendata.opennorth.se/dataset/environment/resource/27fb8bcc-23cb-4e85-b5b4-fde68a8ef93a'></dcat:accessURL>
+	<dct:format>text/csv</dct:format>
+</rdf:Description>
+<!-- Description of startdate and enddate for the data in the dataset -->	
+<rdf:Description rdf:nodeID="_period">
+	<rdfs:label>PeriodOfTime</rdfs:label>
+		<rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+		<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-19</schema:startDate>
+		<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">9999-12-31</schema:endDate>
+</rdf:Description>
+<!-- Description of the type of publishing organization -->	
+<rdf:Description rdf:nodeID="__orgType">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"></rdf:type>
+	<rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"></rdf:type>
+	<dct:type rdf:resource="http://purl.org/adms/publishertype/LocalAuthority"></dct:type>
+	<dct:spatial rdf:resource= 'http://sws.geonames.org/602149'></dct:spatial>
+	<dct:spatial rdf:resource= 'http://dbpedia.org/page/Umeå_Municipality'></dct:spatial>
+</rdf:Description>
+<!-- Information about OpenNorth -->	
+<rdf:Description rdf:nodeID="_on">
+	<rdfs:label>ProviderOfSite</rdfs:label>
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<foaf:name>OpenNorth</foaf:name>
+	<vcard:hasEmail rdf:resource="mailto:admin.openumea@umea.se"/>
+	<vcard:country-name>Sweden</vcard:country-name>
+	<dcat:landingPage rdf:resource= 'http://opendata.opennorth.se/'></dcat:landingPage>
+</rdf:Description>
+<!-- Information about the municipality of Umea -->	
+<rdf:Description rdf:nodeID="_uk">
+	<rdfs:label>PublishingMunicipality</rdfs:label>
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<vcard:fn>Umeå kommun/IT</vcard:fn>
+	<foaf:name>Umeå kommun/IT</foaf:name>
+	<vcard:street-address>Skolgatan 31A</vcard:street-address>
+	<vcard:postal-code>901 84</vcard:postal-code>
+	<vcard:locality>Umeå</vcard:locality>
+	<vcard:country-name>Sweden</vcard:country-name>
+	<vcard:hasEmail rdf:resource="mailto:admin.openumea@umea.se"></vcard:hasEmail>
+</rdf:Description> 
+<!-- Keywords for the Dataset -->	
+<rdf:Description rdf:nodeID="_kw">
+	<rdfs:label>keywords</rdfs:label>
+	<dcat:keyword>rdfs:Literal='opennorth'</dcat:keyword>
+	<dcat:keyword xml:lang="sv-SE">rdfs:Literal='umeå'</dcat:keyword>
+	<dcat:keyword xml:lang="en">rdfs:Literal='umea'</dcat:keyword>
+	<dcat:keyword xml:lang="sv-SE">rdfs:Literal=sverige'</dcat:keyword>
+	<dcat:keyword xml:lang="en">rdfs:Literal='sweden'</dcat:keyword>
+	<dcat:keyword xml:lang="en">rdfs:Literal='environment'</dcat:keyword>
+	<dcat:keyword xml:lang="sv-SE">rdfs:Literal='miljö'</dcat:keyword>
+	<dcat:keyword xml:lang="en">rdfs:Literal='pollution'</dcat:keyword>
+	<dcat:keyword xml:lang="sv-SE">rdfs:Literal='förorening'</dcat:keyword>
+</rdf:Description>
+<!-- Description of distributions -->	
+<rdf:Description rdf:nodeID="_dist">
+	<dct:title xml:lang='sv-SE'>Distributionsformer för filen</dct:title>
+	<dct:title xml:lang='en'>Forms of distribution for the file</dct:title>
+	<dct:description xml:lang="sv-SE">Nedladdningslänk till dataset</dct:description>
+	<dct:description xml:lang="sv-SE">Download link for the dataset</dct:description>
+	<dcat:downloadURL rdf:resource= 'http://ckan.openumea.se/datastore/dump/27fb8bcc-23cb-4e85-b5b4-fde68a8ef93a'></dcat:downloadURL>
+	<dct:license rdf:resource='http://creativecommons.org/publicdomain/zero/1.0/'></dct:license>
+	<dcat:accessURL rdf:resource='http://opendata.opennorth.se/dataset/environment/resource/27fb8bcc-23cb-4e85-b5b4-fde68a8ef93a'> </dcat:accessURL>
+	<dct:rights dct:RightsStatement= 'All data is published without any guarantees regarding data quality or actuality. The publishing of data can be discontinued or delayed without forewarning. All kinds of usage or interpretation of the data is strictly the sole responsibility of the re-user'></dct:rights>
+</rdf:Description>
+<!-- Description of Concept -->	
+<rdf:Description rdf:nodeID="_conc">
+	<skos:prefLabel>'http://eurovoc.europa.eu/406387'</skos:prefLabel>
+	<skos:inScheme rdf:nodeID='_schem'></skos:inScheme>
+</rdf:Description>
+<!-- Description of Schema -->	
+<rdf:Description rdf:nodeID="_schem">
+	<skos:ConceptScheme> 
+			<dct:title>Eurovoc</dct:title>
+	</skos:ConceptScheme>
+</rdf:Description>
+<!-- Description of Conceptschema -->	
+<rdf:Description rdf:nodeID="_concschem">
+	<dcat:theme rdf:resource= 'http://eurovoc.europa.eu/406387/'></dcat:theme>
+</rdf:Description>
+<!-- Description of spatial information connected to the dataset -->	
+<rdf:Description rdf:nodeID="_spat">
+	<rdfs:label>PlaceOfDataCollection</rdfs:label>
+	<dct:Description rdf:resource="http://sws.geonames.org/602149"></dct:Description>
+</rdf:Description>
+</rdf:RDF>

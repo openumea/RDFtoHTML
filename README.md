@@ -10,9 +10,7 @@ Setup
 Run
 ---
 Run the script `python main.py DCAT_INPUT_FILE OUTPUT_FOLDER`.
-It will store all output HTML in the given folder. A separate sub-folder will be
-created for each language encountered in DCAT input file. Each resource
-encountered in the DCAT input file will be output to a separate file.
-
-To link all files together index.html files are created for each language
-together with a top level index file pointing to each language.
+It will store all output HTML in the given folder.
+The script will generate one file per language per resource.
+To link all files together summary files are created for each language.
+The summary file will be named as the input file.

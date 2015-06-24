@@ -1,0 +1,47 @@
+body {
+	margin: 20px 20%;
+}
+
+.datasets {
+	margin: 50px 5%;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+h1, h2, h3, b {
+	text-align: center;
+	margin: 0px;
+}
+
+h1 a, h2 a, h3 a {
+	text-decoration: none;
+}
+
+.title {
+
+}
+
+.id {
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.desc {
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+tr:nth-child(odd) {
+	background: #EEE;
+}
+
+tr:nth-child(even) {
+	background: #FFF;
+}

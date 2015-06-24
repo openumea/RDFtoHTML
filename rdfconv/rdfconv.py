@@ -109,16 +109,6 @@ class RDFtoHTMLConverter(object):
         shutil.copy('styles/style.css', folder)
         os.chdir(folder)
 
-        for language in self.languages:
-            for key, value in self.rdf_dict.iteritems():
-                filename = self._get_file_link(key, language)
-                with codecs.open(filename, 'w', 'utf-8') as output_file:
-                    output_file.write('<html>')
-                    write_head(output_file)
-                    output_file.write(self._format_summary(key, value, language))
-
-                    output_file.write(self._format_node(key, value, language))
-                    output_file.write('</html>')
         self._output_summary_file()
 
     def _output_summary_file(self):
@@ -133,55 +123,74 @@ class RDFtoHTMLConverter(object):
                 write_head(output_file)
                 for key, value in self.rdf_dict.iteritems():
                     if TYPE in value and CATALOG in value[TYPE]:
+                        name = self.file_map[key]
+                        output_file.write('<div class="rdf_obj" id="%s">' % name)
                         summary = self._format_summary(key, value, language)
-                        node = self._format_node(key, value, language,
-                                                 include=CATALOG_SUMMARY)
+                        node = self._format_node(key, value, language)
                         output_file.write(summary)
                         output_file.write(node)
+                        output_file.write('</div>')
 
-                output_file.write('<div class="datasets">')
                 func = self._sort_by_title(language)
                 sorted_items = OrderedDict(sorted(self.rdf_dict.items(),
                                                   key=func))
                 for key, value in sorted_items.iteritems():
                     if TYPE in value and DATASET in value[TYPE]:
-                        summary = self._format_summary(key, value, language,
-                                                 title_format='<h2>%s</h2>',
-                                                 desc_format='<b>%s</b>')
-                        node = self._format_node(key, value, language,
-                                                 include=DATASET_SUMMARY)
+                        name = self.file_map[key]
+                        output_file.write('<div class="rdf_obj" id="%s">' % name)
+                        summary = self._format_summary(key, value, language)
+                        node = self._format_node(key, value, language)
                         output_file.write(summary)
                         output_file.write(node)
-                output_file.write('</div></html>')
+                        output_file.write('</div>')
 
-    def _format_summary(self, node_name, node, language,
-                        title_format='<h1>%s</h1>',
-                        desc_format='<h3>%s</h3>'):
+                for key, value in self.rdf_dict.iteritems():
+                    if TYPE in value:
+                        if CATALOG in value[TYPE] or DATASET in value[TYPE]:
+                            continue
+
+                    name = self.file_map[key]
+                    output_file.write('<div class="rdf_obj" id="%s">' % name)
+                    summary = self._format_summary(key, value, language)
+                    node = self._format_node(key, value, language)
+                    output_file.write(summary)
+                    output_file.write(node)
+                    output_file.write('</div>')
+                output_file.write('</html>')
+
+    def _format_summary(self, node_name, node, language):
         """
         Generate a summary for an RDF node
         """
-        out = '<div>'
-
+        out = ''
         # Try to find something to use as a title and a description
         title = get_attribute(node, TITLE_CANDIDATES)
         desc = get_attribute(node, DESC_CANDIDATES)
+        rdf_type = get_attribute(node, TYPE)
+
+        has_title = False
         if title:
             formated = self._format_literal(title, language)
             if formated:
-                link = self._get_file_link(node_name, language)
-                link = get_link(link, formated[0])
-                link = title_format % link
-                out += '<div class="title">%s</div>' % link
+                out += '<div class="title"><h1>%s</h1></div>' % formated[0]
+                has_title = True
 
-        link = title_format % ('(' + node_name + ')')
-        out += '<div class="id">%s</div>' % link
+        if has_title:
+            out += '<div class="id"><h2>(%s)</h2></div>' % node_name
+        else:
+            out += '<div class="title"><h1>%s</h1></div>' % node_name
+
+
+        if rdf_type:
+            formated = self._format_uriref(rdf_type[0], language)
+            if formated:
+                out += '<div class="type"><h2>%s</h2></div>' % formated
 
         if desc:
             formated = self._format_literal(desc, language)
             if formated:
-                link = desc_format % formated[0]
-                out += '<div class="desc">%s</div>' % link
-        out += '</div>'
+                out += '<div class="desc">%s</div>' % formated[0]
+
         return out
 
     def _format_node(self, node_name, node, language, include=None):
@@ -194,7 +203,7 @@ class RDFtoHTMLConverter(object):
         if not include:
             include = sorted(node.keys())
 
-        out = '<table>'
+        out = '<div class="full_info"><table>'
         for pred in include:
             try:
                 obj_list = node[pred]
@@ -215,7 +224,10 @@ class RDFtoHTMLConverter(object):
                         out += self._format_bnode(obj, language)
 
             out += '</td></tr>'
-        out += '</table>'
+        out += '</table></div>'
+
+        # Add show more button
+        out += '<a class="show_more">Show more</a>'
         return out
 
 
@@ -268,8 +280,8 @@ class RDFtoHTMLConverter(object):
         node could not be found in the current context
         """
         try:
-            return get_file(self.file_map[unicode(rdf_id)],
-                            language)
+            return '#' + self.file_map[unicode(rdf_id)]
+
         except KeyError:
             return None
 
@@ -315,6 +327,8 @@ def get_attribute(node, candidates):
     """
     Gets an attribute from a list of candidates
     """
+    if not isinstance(candidates, list):
+        candidates = [candidates]
     for candidate in candidates:
         if candidate in node:
             return node[candidate]
@@ -329,7 +343,34 @@ def write_head(output_file):
     output_file.write('<link rel="stylesheet" type="text/css"'
                       'href="style.css">')
     output_file.write('<meta charset="UTF-8">')
+    write_js(output_file)
     output_file.write('</head>')
+
+
+def write_js(output_file):
+    js = '''
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.rdf_obj .show_more').click(function() {
+            var link = $(this);
+            table = $(this).siblings('.full_info');
+            table.slideToggle(400, function() {
+                if (table.is(':visible')) {
+                    link.html('Show less');
+                } else {
+                    link.html('Show more');
+                }
+            })
+
+        });
+
+
+    });
+    </script>
+    '''
+
+    output_file.write(js)
 
 
 def get_file(name, language):

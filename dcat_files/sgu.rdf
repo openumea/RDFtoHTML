@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ns1="http://www.w3.org/ns/dcat#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:ns2="http://www.w3.org/ns/adms#"
+	xmlns:ns3="http://www.w3.org/2006/vcard/ns#">
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/dcat">
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/27"/>
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/24"/>
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/22"/>
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/19"/>
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/16"/>
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/13"/>
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/10"/>
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/8"/>
+    <ns1:dataset rdf:resource="https://dcat-editor.com/store/24/resource/4"/>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+    <dcterms:spatial>http://sws.geonames.org/2661886/</dcterms:spatial>
+    <dcterms:modified>2013-10-14</dcterms:modified>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    <foaf:homepage>http://resource.sgu.se/oppnadata/</foaf:homepage>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:issued>2013-10-14</dcterms:issued>
+    <dcterms:description xml:lang="en">Open data from the Geological Survey of Sweden</dcterms:description>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se"/>
+    <dcterms:title xml:lang="sv">Öppna data från Sveriges geologiska undersökning</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sws.geonames.org/2661886/">
+    <rdfs:label xml:lang="en">Sweden</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/4">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/7"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/6"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100159"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>Geologi</ns1:keyword>
+    <ns1:keyword>Brunnar</ns1:keyword>
+    <ns1:keyword>Hydrogeologi</ns1:keyword>
+    <ns1:keyword>Dricksvattenförsörjning</ns1:keyword>
+    <ns1:keyword>Geoenergi</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">I datamangden Brunnar finns uppgifter om enskilda brunnars läge och tekniska data såsom djup, jorddjup, foderrörslängd, dimensioner, vattenkapacitet och vad brunnen används till. Datamängden innehåller även information om till exempel lagerföljder och vattennivåer. Uppgifterna gäller främst bergborrade brunnar och utgörs av de uppgifter som brunnsborrare sedan 1976 enligt lag skickar in till SGU. Informationen används flitigt, både som praktisk upplysning till allmänhet och brunnsborrare, och för forskningsändamål, t.ex. statistiska bearbetningar.
+Brunnsdatabasen innehåller uppgifter från mer än 500 000 brunnar och växer med ca 25 000 brunnsuppgifter varje år, varav ca 20 000 är energibrunnar för bergvärme/bergkyla och ca 5 000 är vattenbrunnar.</dcterms:description>
+    <dcterms:description xml:lang="sv">The dataset on wells contains data on well location and technical properties such as depth, soil depth ,  dimensions, water capacity and usage. The dataset also includes information about stratification and water levels. the dataset primarily contains information about drilled wells in bedrock. Well drillers submit drill protocols since 1976 under legislation. The information are used extensively , both by the public and by well drillers. The well database contains data from more than 500,000 wells, 20,000 energy wells and about 5000 water wells are reported each year.</dcterms:description>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+    <dcterms:title xml:lang="sv">Brunnar</dcterms:title>
+    <dcterms:title xml:lang="en">Wells</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/8">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/9"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>Grundvattenförekomster</ns1:keyword>
+    <ns1:keyword>Vattendirektivet</ns1:keyword>
+    <ns1:keyword>VISS</ns1:keyword>
+    <ns1:keyword>Groundwater body</ns1:keyword>
+    <ns1:keyword>Water Frame Directive</ns1:keyword>
+    <ns1:keyword>Reporting</ns1:keyword>
+    <ns1:keyword>Grundvatten</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">I datamängden Grundvattenförekomster redovisas förekomster av grundvatten som utpekats inom vattenförvaltningen. Förekomsterna används för nationella och europeisk rapportering och uppföljning av status och påverkan. Datamängden innehåller olika versioner av officiella gisskikt samt föreslagna ännu ej beslutade förekomstindelning.</dcterms:description>
+    <dcterms:description xml:lang="en">In the dataset groundwater bodies contains the geometry and metadata on swedish groundwater bodies used for regional and national water management environmental plans and pointed out within the Water Frame Directive. The data set contains of different versions of official GIS-layers.</dcterms:description>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+    <dcterms:title xml:lang="sv">Grundvattenförkomster</dcterms:title>
+    <dcterms:title xml:lang="en">Groundwater Bodies</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/10">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/12"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/11"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>grundvattensituationen</ns1:keyword>
+    <ns1:keyword>tidsserie</ns1:keyword>
+    <ns1:keyword>grundvattennivå</ns1:keyword>
+    <ns1:keyword>grundvatten</ns1:keyword>
+    <ns1:keyword>geologi</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">Bedömningen av månadens grundvattensituation tas fram genom att jämföra aktuella grundvattennivåer i mitten av månaden med månadens genomsnittliga nivå sedan 1970-talet. Redovisningen representerar små grundvattenmagasin och är främst ett stöd för de som har egna brunnar. Kartan utgår från ett urval av de 330 observationsrör i SGUs grundvattennät där nivån mäts två gånger per månad, datum som redovisas i attributet date är satt till den 15:de i varje månad men redovisningen gäller ett medelförhållande under månaden.
+Datamängden är uppdelade i två delmängder - grundvattensituationen i små magasin och grundvattensituationen i stora magasin.
+Relativa nivåer i små magasin i morän eller utanför de större sand och grusavlagringarna med några få undantag baseras dessa på mätningar i jord. Denna redovisning är främst ett stöd för de som har egna brunnar.
+Redovisning för stora magasin avser främst de stora sand och grusåsarna, En stor del av landets kommuner tar sitt vatten från stora grundvattenmagasin.</dcterms:description>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/monthly"/>
+    <dcterms:title xml:lang="sv">Månadskarta över grundvattensituationen</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/13">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/15"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/14"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>grundvattenkemi</ns1:keyword>
+    <ns1:keyword>miljöövervakning</ns1:keyword>
+    <ns1:keyword>datavärdskap</ns1:keyword>
+    <ns1:keyword>provtagningsstationer</ns1:keyword>
+    <ns1:keyword>groundwater chemistry</ns1:keyword>
+    <ns1:keyword>tidsserie</ns1:keyword>
+    <ns1:keyword>grundvatten</ns1:keyword>
+    <ns1:keyword>geologi</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">Miljöövervakning av grundvatten bedrivs i omkring 1700 provplatser. Antalet platser förändras mellan åren och ökar för närvarande. Miljöövervakning drivs dels på nationell nivå av SGU genom långsiktiga miljöövervakningsprogram och dels på regional nivå. Provtagning görs ofta i observationsbrunnar, rör eller i källor samt till viss del i vattentäkter inom ramen för råvattenkontroll. Provplatser som utgörs av vattentäkter i vattenverk finns inte med i datamängden för stationer då informationen om läget för dessa är sekretessbelagd men analysdata från dessa vattentäkter finns tillgängliga.
+Miljöövervakningsdata är uppdelade på två datamängder; stationer för provtagningsplatser och kemidata för analyser.</dcterms:description>
+    <dcterms:description xml:lang="en">The dataset contains data on groundwater chemistry from about 1700 sites in Sweden sampled within Environmental monitoring programs. The number of sites changes over the years and is currently increasing. Long-term environmental monitoring is carried out by SGU on a national scale, mainly from area without anthropogenic influence. The dataset also inkludes data from regional monitoring programs. Sampling is often made in observation wells, pipes or springs and to some extent in untreated groundwater from waterworks sites. location for sampling station at waterworks are classified and therefore not included in the station dataset. Chemistry data for those station is however present in the chemistry dataset.</dcterms:description>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/annual"/>
+    <dcterms:title xml:lang="sv">Miljöövervakning grundvatten</dcterms:title>
+    <dcterms:title xml:lang="en">Environmental monitoring, groundwater</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/16">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/18"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/17"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>grundvattenförekomster</ns1:keyword>
+    <ns1:keyword>hydrogeologi</ns1:keyword>
+    <ns1:keyword>dricksvattenförsörjning</ns1:keyword>
+    <ns1:keyword>tidsserie</ns1:keyword>
+    <ns1:keyword>grundvattennivå</ns1:keyword>
+    <ns1:keyword>grundvatten</ns1:keyword>
+    <ns1:keyword>geologi</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">I datamängden redovisas information om platserna där grundvattennivån mäts inom SGUs grundvattennät. Syftet med grundvattennätet är att studera tidsmässiga variationer i grundvattnets mängd och beskaffenhet, i förhållande till geologi, topografi och klimat. Information om exempelvis jordart, topografiskt läge och typ av akvifer har stor betydelse för att bedöma grundvattennivåns variationsmönster. SGU har gjort mätningar av grundvattennivån sedan slutet av 1960-talet. Resultaten från mätningarna är användbara för referensändamål, prognoser, miljökontroll och resursberäkningar. När man använder nivådata för referensändamål är det viktigt att de platsspecifika egenskaperna i grundvattennätet så långt möjligt liknar den plats som är aktuell för jämförelser och att klimatförhållandena är likartade mellan platserna. Grundvattennivåerna mäts 1–2 gånger per månad i drygt 300 observationsrör, grupperade i ett 70-tal områden.</dcterms:description>
+    <dcterms:description xml:lang="en">The dataset contains groundwater level measured from the SGU's groundwater network. The purpose of the groundwater network is to study natural temporal variations in groundwater quantity, in relation to geology, topography and climate. Information such as soil type, topographical location and type of aquifer is of great importance for assessing groundwater level variation patterns. SGU has made measurements of groundwater level since the late 1960s. The results of the measurements are useful for reference purposes, models for forecasting etc.  Groundwater levels are measured 1-2 times per month in more than 300 observationssites, grouped into around 70 areas. </dcterms:description>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/semimonthly"/>
+    <dcterms:title xml:lang="sv">Grundvattennivåer, tidsserier</dcterms:title>
+    <dcterms:title xml:lang="en">Groundwater levels, time series</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/19">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/21"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/20"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>källor</ns1:keyword>
+    <ns1:keyword>vattenkemi</ns1:keyword>
+    <ns1:keyword>hydrogeologi</ns1:keyword>
+    <ns1:keyword>dricksvattenförsörjning</ns1:keyword>
+    <ns1:keyword>grundvatten</ns1:keyword>
+    <ns1:keyword>geologi</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">I datamängden för Källor finns information om drygt 2000 källor (dvs. naturliga grundvattenutflöden). Här finns uppgifter om källornas läge, flöde, akvifärtyp och i viss omfattning vattenkvalitet m.m. Källor kan vara av stor vikt för specifika biotoper samt har i många fall en stor kulturhistorisk betydelse. Informationen kan bl.a. användas för att välja ut provtagningsplatser för kemisk karakterisering av grundvatten eller för miljöövervakning.</dcterms:description>
+    <dcterms:description xml:lang="en">The dataset Springs contains information about over 2,000 freshwater springs (ie natural groundwater outflows ). Information includes location, spring type, discharge, akvifer type and to some extent water quality etc. Springs are of great importance for certain ecosystems and often keeps a cultural history. The information may be used to find drinking water, select sampling sites for characterization of groundwater or for environmental monitoring .</dcterms:description>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+    <dcterms:title xml:lang="sv">Källor</dcterms:title>
+    <dcterms:title xml:lang="en">Springs</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/22">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/23"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>vattenkvalitet</ns1:keyword>
+    <ns1:keyword>dricksvattenförsöjning</ns1:keyword>
+    <ns1:keyword>vattenkemi</ns1:keyword>
+    <ns1:keyword>grundvattenförekomster</ns1:keyword>
+    <ns1:keyword>hydrogeologi</ns1:keyword>
+    <ns1:keyword>grundvatten</ns1:keyword>
+    <ns1:keyword>geologi</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">Datasetet innehåller statistiska sammanställningar av vattenkvalitetsdata per grundvattenförekomst. Sammanställningarna är gjorda utifrån vattenkvalitetsdata från nationella och regionala övervakningsprogram, analysresultat för de engångsundersökningar (verifiering, screening och källinventering) som finns lagrade hos SGU och analysresultat från dataarkivet om kommunernas råvattenkontroll (Vattentäktsarkivet).
+
+Datasetets begränsningar: Vattenkvaltietsdata från undersökningar som SGU inte själva utför utan endast samlar in, exempelvis regionala övervakningsprogram och råvattenkontroll från vattentäktsarkivet är inte kvalitetsgranskade och kan innehålla felaktig information. Medelvärdesberäkningarna omfattar bara de geologiska formationer som genom vattenförvaltningen blivit utpekade som grundvattenförekomster. </dcterms:description>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+    <dcterms:title xml:lang="sv">Vattenkvalitetsdata per grundvattenförkomst</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/24">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/26"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/25"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>sediment</ns1:keyword>
+    <ns1:keyword>miljögifter</ns1:keyword>
+    <ns1:keyword>metaller</ns1:keyword>
+    <ns1:keyword>hav</ns1:keyword>
+    <ns1:keyword>sjö</ns1:keyword>
+    <ns1:keyword>kust</ns1:keyword>
+    <ns1:keyword>maringeologi</ns1:keyword>
+    <ns1:keyword>miljöövervakning</ns1:keyword>
+    <ns1:keyword>datavärdskap</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">I ”Miljöövervakning, havs och sjösediment” redovisas punktdata som samlas in inom ramen för nationell-, regional- och lokal miljöövervakning. Syftet är i första hand att redovisa tillstånd och trender av miljögiftsbelastning i sediment. Analyserna görs på prover tagna från sediment i ackumulationsområden som ofta utgör en sänka för många grundämnen och miljögifter.
+Dessa data kan laddas ned över valfritt län eller miljöövervakningsstation. Via SGUs kartvisare ”Miljöövervakning, havs- och sjösediment” erbjuds även grafisk presentation av tidsserier och statistisk information.
+</dcterms:description>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+    <dcterms:title xml:lang="sv">Miljöövervakning, havs- och sjösediment</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/27">
+    <ns2:contactPoint rdf:resource="https://dcat-editor.com/store/24/resource/5"/>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/29"/>
+    <ns1:distribution rdf:resource="https://dcat-editor.com/store/24/resource/28"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+    <ns1:theme rdf:resource="http://eurovoc.europa.eu/100151"/>
+    <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <ns1:keyword>geokemi</ns1:keyword>
+    <ns1:keyword>markgeokemi</ns1:keyword>
+    <ns1:keyword>analysdata</ns1:keyword>
+    <ns1:keyword>moränprov</ns1:keyword>
+    <dcterms:publisher rdf:resource="https://dcat-editor.com/store/24/resource/1"/>
+    <dcterms:description xml:lang="sv">Produkten innehåller information om olika grundämnen i morän i Sverige. Partiell lakning har gjorts med kungsvatten, den lösta delen av provet har analyserats med masspektrometer, ICP-MS.
+Provtagning har skett i första hand i anslutning till befintligt vägnät med ett avstånd på 12,5 km mellan provtagningsplatserna. I områden utan vägar har transport skett med helikopter. En grop har grävts för hand med hjälp av spade och spett, sedan har man tagit 500-800 gram morän från C-horisonten. Provtagningen är ej återkommande utan endast ett prov tas vid ett tillfälle, alltså inga tidsserier. Alla analyser genomgår en kvalitetskontroll. Dessutom analyseras kontrollprov parallellt med de ordinarie analyserna. Alla haltangivelser är i mg kg-1 (ppm) eller µg kg-1 (ppb), och anges i attributnamnet. ”Ej analyserat” anges som -999,999.</dcterms:description>
+    <dcterms:title xml:lang="sv">Markgeokemi, analysdata från geokemisk atlas över Sverige</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/6">
+    <dcterms:format>text/csv</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Länsvis filnedladdning i CSV-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/brunnar-nedladdning.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/7">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Länsvis filnedladdning i JSON-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/brunnar-nedladdning.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/9">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i GeoJSON-format (polygoner)</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/grundvattenforekomster-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/11">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i GeoJSON-format (polygoner)</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/manadskarta-grundvattensituationen-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/12">
+    <dcterms:format>image/png</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i bildformat (png,jpg,gif)</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/manadskarta-grundvattensituationen-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/14">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i JSON-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/miljoovervakning-grundvatten-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/15">
+    <dcterms:format>text/csv</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i CSV-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/miljoovervakning-grundvatten-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/17">
+    <dcterms:format>text/csv</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Filnedladdning i CSV-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/grundvattennivaer-nedladdning.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/18">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Filnedladdning i JSON-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/grundvattennivaer-nedladdning."/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/20">
+    <dcterms:format>text/csv</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Filnedladdning i CSV-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/kallor-nedladdning.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/21">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Filnedladdning i JSON-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/kallor-nedladdning.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/23">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Länsvis filnedladdning i JSON-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/grundvatten/grundvattenkvalitet-nedladdning.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/25">
+    <dcterms:format>text/csv</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i CSV-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/marin/miljoovervakning-sediment-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/26">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i JSON-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/marin/miljoovervakning-sediment-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/28">
+    <dcterms:format>text/csv</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i CSV-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/geokemi/markgeokemi-analysdata-atlas-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/29">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcterms:description>Nedladdning via API i JSON-format</dcterms:description>
+    <ns1:accessURL rdf:resource="http://resource.sgu.se/oppnadata/geokemi/markgeokemi-analysdata-atlas-api.xml"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/2.5/se"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/1">
+    <foaf:mbox rdf:resource="mailto:sgu@sgu.se"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <foaf:homepage>www.sgu.se</foaf:homepage>
+    <foaf:name>Sveriges geologiska undersökning</foaf:name>
+    <foaf:name>Geological Survey of Sweden</foaf:name>
+    <dcterms:type rdf:resource="http://purl.org/adms/publishertype/NationalAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_node19j3ihhlfx3">
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+    <ns3:hasValue rdf:resource="tel:+4618179000"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_node19j3ihhlfx1">
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+    <ns3:hasValue rdf:resource="tel:+4618179210"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_node19j3ihhlfx2">
+    <ns3:postal-code>75128</ns3:postal-code>
+    <ns3:locality>Uppsala</ns3:locality>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+    <ns3:country-name>Sweden</ns3:country-name>
+    <ns3:street-address>Box 670, Villavägen 18</ns3:street-address>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dcat-editor.com/store/24/resource/5">
+    <ns3:fn>SGU kundservice</ns3:fn>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    <ns3:hasEmail rdf:resource="mailto:kundservice@sgu.se"/>
+    <ns3:hasTelephone rdf:nodeID="_node19j3ihhlfx3"/>
+    <ns3:hasTelephone rdf:nodeID="_node19j3ihhlfx1"/>
+    <ns3:hasAddress rdf:nodeID="_node19j3ihhlfx2"/>
+  </rdf:Description>
+</rdf:RDF>

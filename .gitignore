@@ -58,3 +58,6 @@ target/
 
 # Swap files
 *.sw[op]
+
+# Don't track output from the script
+output/

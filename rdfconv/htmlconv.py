@@ -153,34 +153,6 @@ def write_head(output_file):
     output_file.write('<link rel="stylesheet" type="text/css"'
                       'href="style.css">')
     output_file.write('<meta charset="UTF-8">')
-    write_js(output_file)
+    output_file.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>')
+    output_file.write('<script src="rdfconv.js"></script>')
     output_file.write('</head>')
-
-
-def write_js(output_file):
-    """
-    Write the JavaScript to given file
-    """
-    java_script = '''
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('.rdf_obj .show_more').click(function() {
-            var link = $(this);
-            table = $(this).siblings('.full_info');
-            table.slideToggle(400, function() {
-                if (table.is(':visible')) {
-                    link.html('Show less');
-                } else {
-                    link.html('Show more');
-                }
-            })
-
-        });
-
-
-    });
-    </script>
-    '''
-
-    output_file.write(java_script)

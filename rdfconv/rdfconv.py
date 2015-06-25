@@ -89,7 +89,9 @@ class RDFtoHTMLConverter(object):
             print folder, 'is not a directory'
             exit(1)
 
-        shutil.copy('styles/style.css', folder)
+        # Move script and style files
+        shutil.copy('includes/style.css', folder)
+        shutil.copy('includes/rdfconv.js', folder)
         os.chdir(folder)
 
         html_conv = HtmlConverter(self.objects, self._ns_mgr)

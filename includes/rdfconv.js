@@ -11,12 +11,27 @@ $(document).ready(function() {
 	})
 
     });
-    // Expand div when user goes to another RDF object
-    $(window).bind('hashchange', function(e) {
-	var hash = location.hash;
-	var rdf_obj = $(hash);
-	if (!rdf_obj.children('.full_info').is(':visible')) {
-	    rdf_obj.children('.show_more').click();
+
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	  var target = $(this.hash);
+	  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	  if (target.length) {
+	    $('html,body').animate({
+	      scrollTop: target.offset().top
+	    }, 400);
+
+	    location.hash = this.hash
+	    if (!target.children('.full_info').is(':visible')) {
+		setTimeout(function() {
+		    target.children('.show_more').click();
+		}, 400);
+	    }
+
+	    return false;
+	  }
 	}
+      });
     });
 });

@@ -34,11 +34,11 @@ def format_literal(literals, language):
             other_lang.append(literal.value)
 
     if same_lang:
-        return same_lang
+        return sorted(same_lang)
     if no_lang:
-        return no_lang
+        return sorted(no_lang)
     if other_lang:
-        return other_lang
+        return sorted(other_lang)
 
 
 def get_attribute(node, candidates):

@@ -71,7 +71,8 @@ class HtmlConverter(object):
 
         # Add the RDF id att the top
         out += '<tr><td>'
-        out += self._format_uriref(RDF_ABOUT, language)
+        link, title = self._format_uriref(RDF_ABOUT, language)
+        out += get_link(link, title)
         out += '</td><td>'
         out += get_link(rdf_obj.id, rdf_obj.id)
         out += '</td></tr>'
@@ -82,17 +83,23 @@ class HtmlConverter(object):
                 # Skip the desired attributes if they are not present
                 continue
             out += '<tr><td>'
-            out += self._format_uriref(pred, language)
+            link, title = self._format_uriref(pred, language)
+            out += get_link(link, title)
             out += '</td><td>'
             if obj_list and isinstance(obj_list[0], Literal):
                 literals = format_literal(obj_list, language)
                 out += '<br />'.join(literals)
             else:
+                # Get the other objects and sort them based on their title
+                new_list = []
                 for obj in obj_list:
                     if isinstance(obj, URIRef):
-                        out += self._format_uriref(obj, language)
+                        new_list.append(self._format_uriref(obj, language))
                     elif isinstance(obj, BNode):
-                        out += self._format_bnode(obj, language)
+                        new_list.append(self._format_bnode(obj, language))
+                new_list = sorted(new_list, key=lambda t: t[1])
+                for link, value in new_list:
+                    out += get_link(link, value)
 
             out += '</td></tr>'
         out += '</table></div>'
@@ -122,9 +129,7 @@ class HtmlConverter(object):
         if norm[-1] == '/':
             norm = norm[:len(norm)-1]
 
-        out = get_link(uri_ref, norm)
-
-        return out
+        return (uri_ref, norm)
 
     def _format_bnode(self, bnode, language):
         """
@@ -135,7 +140,7 @@ class HtmlConverter(object):
         link = self._get_fragment_link(rdf_id)
         if link:
             title = self.objects[rdf_id].get_title(language)
-            return get_link(link, title)
+            return (link, title)
 
         return None
 

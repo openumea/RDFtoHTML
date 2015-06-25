@@ -9,6 +9,12 @@ from utils import get_link, format_literal
 
 RDF_ABOUT = URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#about')
 
+CATALOG = URIRef(u'http://www.w3.org/ns/dcat#Catalog')
+DATASET = URIRef(u'http://www.w3.org/ns/dcat#Dataset')
+DISTRIBUTION = URIRef(u'http://www.w3.org/ns/dcat#Distribution')
+
+OBJ_ORDER = [CATALOG, DATASET, DISTRIBUTION]
+
 class HtmlConverter(object):
     """
     Class that converts a dictionary of RdfObjects into HTML
@@ -22,11 +28,20 @@ class HtmlConverter(object):
         """
         Output each node to a separate file per language
         """
+        objects = []
+        for rdf_type in OBJ_ORDER:
+            for obj in self.objects.values():
+                if obj.type == rdf_type:
+                    objects.append(obj)
+
+        for obj in self.objects.values():
+            if obj not in objects:
+                objects.append(obj)
 
         with codecs.open(path, 'w', 'utf-8') as output_file:
             output_file.write('<html>')
             write_head(output_file)
-            for rdf_id, obj in self.objects.iteritems():
+            for obj in objects:
                 output_file.write('<div class="rdf_obj" id="%s">' % obj.fragment)
                 summary = self._format_summary(obj, language)
                 node = self._format_node(obj, language)

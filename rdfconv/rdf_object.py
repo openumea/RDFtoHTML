@@ -56,6 +56,9 @@ class RdfObject(object):
     def __repr__(self):
         return self.id
 
+    def __eq__(self, other):
+        return self.id == other.id
+
     def get_title(self, language):
         """
         Gets the title of the RDF object

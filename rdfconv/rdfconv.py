@@ -74,7 +74,6 @@ class RDFtoHTMLConverter(object):
             objects.append(obj)
 
         # Sort them by type -> title
-        # TODO: Sort them according to some predefined order
         self.objects = OrderedDict()
         for obj in sorted(objects, key=lambda x: x.get_sort_tuple('en')):
             self.objects[obj.id] = obj

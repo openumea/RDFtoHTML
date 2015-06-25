@@ -83,7 +83,12 @@ class RDFtoHTMLConverter(object):
         """
         Output one file per language encountered in the rdf file
         """
-        os.mkdir(folder)
+        if not os.path.exists(folder):
+            os.mkdir(folder)
+        elif not os.path.isdir(folder):
+            print folder, 'is not a directory'
+            exit(1)
+
         shutil.copy('styles/style.css', folder)
         os.chdir(folder)
 

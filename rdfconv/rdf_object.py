@@ -63,7 +63,8 @@ class RdfObject(object):
         candidates = format_literal(self.title, language)
         if candidates:
             return candidates[0]
-        return ''
+        else:
+            return self.id
 
     def get_description(self, language):
         """

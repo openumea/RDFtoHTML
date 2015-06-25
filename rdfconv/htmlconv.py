@@ -7,6 +7,7 @@ from rdflib.term import URIRef, BNode, Literal
 
 from utils import get_link, format_literal
 
+RDF_ABOUT = URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#about')
 
 class HtmlConverter(object):
     """
@@ -48,8 +49,6 @@ class HtmlConverter(object):
         if title:
             out += '<div class="title"><h1>%s</h1></div>' % title
 
-        out += '<div class="rdf_id"><h1>%s</h1></div>' % rdf_obj.id
-
         if rdf_type:
             out += '<div class="type"><h2>%s</h2></div>' % rdf_type
 
@@ -69,7 +68,14 @@ class HtmlConverter(object):
             include = sorted(rdf_obj.attributes.keys())
 
         out = '<div class="full_info"><table>'
-        for pred in include:
+
+        # Add the RDF id att the top
+        out += '<tr><td>'
+        out += self._format_uriref(RDF_ABOUT, language)
+        out += '</td><td>'
+        out += get_link(rdf_obj.id, rdf_obj.id)
+        out += '</td></tr>'
+        for pred in sorted(include):
             try:
                 obj_list = rdf_obj.attributes[pred]
             except KeyError:

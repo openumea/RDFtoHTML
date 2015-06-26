@@ -59,5 +59,8 @@ target/
 # Swap files
 *.sw[op]
 
+# IntelliJ project files
+.idea/
+
 # Don't track output from the script
 output/

@@ -7,7 +7,7 @@ from django.template import Context
 from django.template.loader import get_template
 from django.conf import settings
 
-from utils import format_literal
+from rdfconv.utils import format_literal
 
 RDF_ABOUT = URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#about')
 

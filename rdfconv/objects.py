@@ -3,7 +3,7 @@ Class containing code related to RDF objects
 """
 
 import hashlib
-from utils import get_attribute, format_literal
+from rdfconv.utils import get_attribute, format_literal
 
 # Namespaces
 TYPE = u'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'

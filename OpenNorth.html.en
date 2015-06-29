@@ -1,0 +1,5023 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="rdfconv.js"></script>
+</head>
+<div style="float: right;">
+    Updated 2015-11-12 15:50
+</div>
+
+    <div class="rdf_obj" id="91fff6a2b630ed9d5b7c42ff5bbc4351">
+    <div class="title">
+        <h1>OpenNorth</h1>
+    </div>
+    <div class="type">
+        <h2>Catalog</h2>
+    </div>
+    <div class="desc">OpenNorth is a cooperation between the municipalities of Umeå and Skellefteå. The cooperation revolves around open data and this catalog describes tha open data that are published by the municipalties and other actors who choose to publish their data on our site. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/dcat">https://dcat-editor.com/store/66/resource/dcat</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            OpenNorth is a cooperation between the municipalities of Umeå and Skellefteå. The cooperation revolves around open data and this catalog describes tha open data that are published by the municipalties and other actors who choose to publish their data on our site.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/ENG">http://publications.europa.eu/resource/authority/language/ENG</a><br />
+                        
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/rights">Rights</a></td>
+                    <td>
+                    
+                        
+                            <a href="#49c0b1f8891b8c975400ec3c9e37b1f7">N15ab45c3f67d4e65b6ec2093c28d6e9b</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#393f0bee16fd8e350676f9e33d4bb7c5">Västerbotten</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            OpenNorth
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#dataset">Dataset</a></td>
+                    <td>
+                    
+                        
+                            <a href="#11d47b81d2763929d1cdb7afac93a9cf">Air quality in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#dbbc9fb42dc1739f389b698478d728b6">Budget Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#a74f40427883a661f68d889c8dbb41aa">Bus stops in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#07562acc813f75db92afe26ed84e2e13">Elementary schools in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#638e5b26ba875606c03f1bdca6202aed">Employment per agegroup and sex in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#97ee6a609f8af065930b4331cb304eb5">Expenses Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#40179af7b35397b29ab69f772fcb3536">Food Inspections in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#db1535f577c1661dc5e7734c71627c7c">Homes Social Services in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#6d52375df9555e39d81325fddbe5ca86">New buildings per year in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#0facb3e6544cbe1b699fd4a44f4bf487">Population Statistics for Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#78c617cc8df7ab966b68610642303f89">Preschools in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#3c9181caad289a64839592e68b1edae3">Public Libraries in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#920a04d064241791a640def2f92d2a51">Radon surveys in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#e197432cb6476435bc6fecd3ae84cffc">Recreational Facilities in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#8783dbb0e73598c58f4192a2a0f4c800">Secondary schools in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#f1e4f704ae5b6f1a0c01a5e57df69489">Suppliers ledger (Leverantörsreskontra)</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://xmlns.com/foaf/0.1/homepage">Homepage</a></td>
+                    <td>
+                    
+                        
+                            <a href=http://opendata.opennorth.se/ target="_blank"></a>
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="11d47b81d2763929d1cdb7afac93a9cf">
+    <div class="title">
+        <h1>Air quality in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Data regarding the air quality in the Municipality of Umea from the city´s sensors. The levels of NO2 and PM10 is extracted every 15 minutes (the average of four measurements of the levels during the last 60 minutes). More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_luftkvalitetm%C3%A4tningar target="_blank">Information om luftkvalitetmätningar</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/24">https://dcat-editor.com/store/66/resource/24</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/continuous">http://purl.org/cld/freq/continuous</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Data regarding the air quality in the Municipality of Umea from the city´s sensors. The levels of NO2 and PM10 is extracted every 15 minutes (the average of four measurements of the levels during the last 60 minutes). More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_luftkvalitetm%C3%A4tningar target="_blank">Information om luftkvalitetmätningar</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Air quality in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#636c63d8426c61f7fdd79af8ee8e7e54">Air quality in Umeå</a><br />
+                        
+                    
+                        
+                            <a href="#e47394836688568ca1927362c178d5a2">Air quiality in Umeå (RDF)</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            environment pm10 no2
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/environment">http://opendata.opennorth.se/dataset/environment</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100155">http://eurovoc.europa.eu/100155</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="dbbc9fb42dc1739f389b698478d728b6">
+    <div class="title">
+        <h1>Budget Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Budget for the municipality of Umeå data encoded according to the encoding standard issued by Statistics Sweden in connection with their compiling of the yearly report "Räkenskapssammandrag för kommuner och landsting".
+
+The data is encoded in UTF-8 which means that Swedish characters will turn up wrong in Microsoft Excel. This can be avoided by importing the data into Excel as text and choose the option thats says something like "Unicode UTF-8" at the appropriate multi-choice box. The box has the label "Filursprung" in Excel 2010.
+
+More info at <a href=http://wiki.opennorth.se/index.php/Metadata/Information_om_budgetdata target="_blank">Information om budgetdata</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/22">https://dcat-editor.com/store/66/resource/22</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/monthly">http://purl.org/cld/freq/monthly</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Budget for the municipality of Umeå data encoded according to the encoding standard issued by Statistics Sweden in connection with their compiling of the yearly report "Räkenskapssammandrag för kommuner och landsting".
+
+The data is encoded in UTF-8 which means that Swedish characters will turn up wrong in Microsoft Excel. This can be avoided by importing the data into Excel as text and choose the option thats says something like "Unicode UTF-8" at the appropriate multi-choice box. The box has the label "Filursprung" in Excel 2010.
+
+More info at <a href=http://wiki.opennorth.se/index.php/Metadata/Information_om_budgetdata target="_blank">Information om budgetdata</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Budget Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#47ec62cec85fbe7c3ff18e21540fe849">Budget Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            economy budget
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/budget-umea">http://opendata.opennorth.se/dataset/budget-umea</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100146">http://eurovoc.europa.eu/100146</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="a74f40427883a661f68d889c8dbb41aa">
+    <div class="title">
+        <h1>Bus stops in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Information about busstops in the Municipality of Umeå, i e the geocodes for the busstops. The data is extraced at irregular intervals. More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_bussh%C3%A5llplatser target="_blank">Information om busshållplatser</a>. If you want more actual data, please investigate the API at Trafiklab - <a href=http://www.trafiklab.se/api target="_blank">api</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/55">https://dcat-editor.com/store/66/resource/55</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/irregular">http://purl.org/cld/freq/irregular</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Information about busstops in the Municipality of Umeå, i e the geocodes for the busstops. The data is extraced at irregular intervals. More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_bussh%C3%A5llplatser target="_blank">Information om busshållplatser</a>. If you want more actual data, please investigate the API at Trafiklab - <a href=http://www.trafiklab.se/api target="_blank">api</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Bus stops in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#9e3117e29e50df7ddde8b5216aed8a3f">Bus stops in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            public transport geocode
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/bus-stops-in-umea">http://opendata.opennorth.se/dataset/bus-stops-in-umea</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100154">http://eurovoc.europa.eu/100154</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="07562acc813f75db92afe26ed84e2e13">
+    <div class="title">
+        <h1>Elementary schools in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Adresses, geolocations etc for the Elementary schools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_grundskolor target="_blank">Information om grundskolor</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/65">https://dcat-editor.com/store/66/resource/65</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/irregular">http://purl.org/cld/freq/irregular</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Adresses, geolocations etc for the Elementary schools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_grundskolor target="_blank">Information om grundskolor</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Elementary schools in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#221f1bb148110f94ca42740342c558fd">Elementary schools in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            geocode schools
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/elementary-schools">http://opendata.opennorth.se/dataset/elementary-schools</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100161">http://eurovoc.europa.eu/100161</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="638e5b26ba875606c03f1bdca6202aed">
+    <div class="title">
+        <h1>Employment per agegroup and sex in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">nformation about levels of employment for the inhabitants of the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.opennorth.se/index.php/Anst%C3%A4llning_per_%C3%A5ldersgrupp_och_k%C3%B6n target="_blank">Anställning per åldersgrupp och kön</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/59">https://dcat-editor.com/store/66/resource/59</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/irregular">http://purl.org/cld/freq/irregular</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            nformation about levels of employment for the inhabitants of the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.opennorth.se/index.php/Anst%C3%A4llning_per_%C3%A5ldersgrupp_och_k%C3%B6n target="_blank">Anställning per åldersgrupp och kön</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Employment per agegroup and sex in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#329e33298158f50b478b8d24166adaea">Employment per agegroup and sex in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            Employment statistics
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/employment-per-agegroup-and-sex">http://opendata.opennorth.se/dataset/employment-per-agegroup-and-sex</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100153">http://eurovoc.europa.eu/100153</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="97ee6a609f8af065930b4331cb304eb5">
+    <div class="title">
+        <h1>Expenses Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Expenses for for the municipality of Umeå data encoded according to the encoding standard issued by Statistics Sweden in connection with their compiling of the yearly report "Räkenskapssammandrag för kommuner och landsting". The encoding makes it possible to compare this data regarding actual expenses with the budget data published on this URL: <a href=http://opendata.opennorth.se/dataset/budget-umea target="_blank">budget umea</a>
+
+The data is encoded in UTF-8 which means that Swedish characters will turn up wrong in Microsoft Excel. This can be avoided by importing the data into Excel as text and choose the option thats says something like "Unicode UTF-8" at the appropriate multi-choice box. The box has the label "Filursprung" in Excel 2010.
+
+More info at <a href=http://wiki.opennorth.se/index.php/Ekonomiskt_utfall target="_blank">Ekonomiskt utfall</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/47">https://dcat-editor.com/store/66/resource/47</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/monthly">http://purl.org/cld/freq/monthly</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Expenses for for the municipality of Umeå data encoded according to the encoding standard issued by Statistics Sweden in connection with their compiling of the yearly report "Räkenskapssammandrag för kommuner och landsting". The encoding makes it possible to compare this data regarding actual expenses with the budget data published on this URL: <a href=http://opendata.opennorth.se/dataset/budget-umea target="_blank">budget umea</a>
+
+The data is encoded in UTF-8 which means that Swedish characters will turn up wrong in Microsoft Excel. This can be avoided by importing the data into Excel as text and choose the option thats says something like "Unicode UTF-8" at the appropriate multi-choice box. The box has the label "Filursprung" in Excel 2010.
+
+More info at <a href=http://wiki.opennorth.se/index.php/Ekonomiskt_utfall target="_blank">Ekonomiskt utfall</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Expenses Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2b7ec2e209bd2e4e1f1b1007ddd99372">Expenses Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            economy expenses
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/expenses-umea">http://opendata.opennorth.se/dataset/expenses-umea</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100146">http://eurovoc.europa.eu/100146</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="40179af7b35397b29ab69f772fcb3536">
+    <div class="title">
+        <h1>Food Inspections in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Result from the inspection of food serving venues performed by the muncipality of Umeå. The data is extracted regularly. A description of the content of the file can be found here: <a href=http://openumeawiki.se/index.php/Metadata/Information_om_h%C3%A4lsoskyddsinspektioner target="_blank">Information om hälsoskyddsinspektioner</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/18">https://dcat-editor.com/store/66/resource/18</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/monthly">http://purl.org/cld/freq/monthly</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Result from the inspection of food serving venues performed by the muncipality of Umeå. The data is extracted regularly. A description of the content of the file can be found here: <a href=http://openumeawiki.se/index.php/Metadata/Information_om_h%C3%A4lsoskyddsinspektioner target="_blank">Information om hälsoskyddsinspektioner</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Food Inspections in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5096c7b6f41dde677cf551fa9c293cc8">Food inspections in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            health food
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/food-inspections">http://opendata.opennorth.se/dataset/food-inspections</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100147">http://eurovoc.europa.eu/100147</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="db1535f577c1661dc5e7734c71627c7c">
+    <div class="title">
+        <h1>Homes Social Services in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Information about the homes in the municipality of Umeå, e.g. geolocation, that services the elderly and disabled. The data is extracted at irregular intervals More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_%C3%A4ldreboenden target="_blank">Information om äldreboenden</a> d </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/51">https://dcat-editor.com/store/66/resource/51</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/irregular">http://purl.org/cld/freq/irregular</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Information about the homes in the municipality of Umeå, e.g. geolocation, that services the elderly and disabled. The data is extracted at irregular intervals More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_%C3%A4ldreboenden target="_blank">Information om äldreboenden</a> d
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Homes Social Services in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#7e60f39efb1fe935624f2c93a2783a0c">Homes Social Services in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            geocode social services
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/homes-social-services">http://opendata.opennorth.se/dataset/homes-social-services</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100161">http://eurovoc.europa.eu/100161</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="6d52375df9555e39d81325fddbe5ca86">
+    <div class="title">
+        <h1>New buildings per year in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Number of new buildings built in the Municipality of Umeå each year. There is also numbers of rooms built (latter years only). The data is extracted at irregular intervals. More info at <a href=http://wiki.opennorth.se/index.php/Nya_byggnader_per_%C3%A5r target="_blank">Nya byggnader per år</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/57">https://dcat-editor.com/store/66/resource/57</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/irregular">http://purl.org/cld/freq/irregular</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Number of new buildings built in the Municipality of Umeå each year. There is also numbers of rooms built (latter years only). The data is extracted at irregular intervals. More info at <a href=http://wiki.opennorth.se/index.php/Nya_byggnader_per_%C3%A5r target="_blank">Nya byggnader per år</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            New buildings per year in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#55111ce6833f314bca926cd5c88f98a1">New buildings per year in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            buildings statistics
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/new-buildings-per-year">http://opendata.opennorth.se/dataset/new-buildings-per-year</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100155">http://eurovoc.europa.eu/100155</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="0facb3e6544cbe1b699fd4a44f4bf487">
+    <div class="title">
+        <h1>Population Statistics for Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Population statistics regarding the citizens of Umeå and mapfiles describing Key Code Areas. The population data are extracted regulary. The data describing "Key Code Areas" are extracted irregulary.
+
+The population data is distributed by statistical "Key Code Areas" that divides the municipality of Umea into a number of geographical areas. A map showing the Key Codes Areas can be found here: <a href=http://www.umea.se/download/18.6cb02deb13d3f84af7a10d95/1364990076464/Karta_2siffernykon.pdf target="_blank">Karta 2siffernykon.pdf</a>
+
+You will find more information regarding the population data (the CSV-file) at: <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_befolkningen target="_blank">Information om befolkningen</a>
+
+The Key Code Areas are used in a lot of different statistics. Data regarding the Key Code Areas was collected in december 2013. The Key Codes are very seldom changed. This is the key code that consists of two characters. The division into smaller key areas (using six characters) that gives a more comminuted division of the area of the municipality is not published. You find more information about the files that maps out the Key Code Areas at (<a href=http://wiki.openumea.se/index.php/Metadata/Information_om_nyckelkodsomr%C3%A5den target="_blank">Information om nyckelkodsområden</a>) </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/4">https://dcat-editor.com/store/66/resource/4</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/monthly">http://purl.org/cld/freq/monthly</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Population statistics regarding the citizens of Umeå and mapfiles describing Key Code Areas. The population data are extracted regulary. The data describing "Key Code Areas" are extracted irregulary.
+
+The population data is distributed by statistical "Key Code Areas" that divides the municipality of Umea into a number of geographical areas. A map showing the Key Codes Areas can be found here: <a href=http://www.umea.se/download/18.6cb02deb13d3f84af7a10d95/1364990076464/Karta_2siffernykon.pdf target="_blank">Karta 2siffernykon.pdf</a>
+
+You will find more information regarding the population data (the CSV-file) at: <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_befolkningen target="_blank">Information om befolkningen</a>
+
+The Key Code Areas are used in a lot of different statistics. Data regarding the Key Code Areas was collected in december 2013. The Key Codes are very seldom changed. This is the key code that consists of two characters. The division into smaller key areas (using six characters) that gives a more comminuted division of the area of the municipality is not published. You find more information about the files that maps out the Key Code Areas at (<a href=http://wiki.openumea.se/index.php/Metadata/Information_om_nyckelkodsomr%C3%A5den target="_blank">Information om nyckelkodsområden</a>)
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2015-06-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Population Statistics for Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8f0149dad7cfcc876241db008208241a">Population statistics for Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                             population statistics
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/population-statistics">http://opendata.opennorth.se/dataset/population-statistics</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100149">http://eurovoc.europa.eu/100149</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="78c617cc8df7ab966b68610642303f89">
+    <div class="title">
+        <h1>Preschools in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Adresses, geolocations etc for the Preschools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_f%C3%B6rskolor target="_blank">Information om förskolor</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/67">https://dcat-editor.com/store/66/resource/67</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/irregular">http://purl.org/cld/freq/irregular</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Adresses, geolocations etc for the Preschools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_f%C3%B6rskolor target="_blank">Information om förskolor</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Preschools in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#63d2bf6d6e7199d4044c85ea6e5fda13">Preschools in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            geocode schools
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100161">http://eurovoc.europa.eu/100161</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="3c9181caad289a64839592e68b1edae3">
+    <div class="title">
+        <h1>Public Libraries in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Adresses, geolocations etc for the Public Libraries in the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.opennorth.se/index.php/Metadata/Information_om_bibliotek target="_blank">Information om bibliotek</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/63">https://dcat-editor.com/store/66/resource/63</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/irregular">http://purl.org/cld/freq/irregular</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Adresses, geolocations etc for the Public Libraries in the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.opennorth.se/index.php/Metadata/Information_om_bibliotek target="_blank">Information om bibliotek</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Public Libraries in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#7c3568362287a24592aa7f3e1541cef6">Public Libraries in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            geocode library
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/pub">http://opendata.opennorth.se/dataset/pub</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100161">http://eurovoc.europa.eu/100161</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="920a04d064241791a640def2f92d2a51">
+    <div class="title">
+        <h1>Radon surveys in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Result from the radon surveys performed by the muncipality of Umeå. The data is extracted regularly. More information about the content of the file can be found here: <a href=http://wiki.opennorth.se/index.php/Radonm%C3%A4tningar target="_blank">Radonmätningar</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/20">https://dcat-editor.com/store/66/resource/20</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/monthly">http://purl.org/cld/freq/monthly</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Result from the radon surveys performed by the muncipality of Umeå. The data is extracted regularly. More information about the content of the file can be found here: <a href=http://wiki.opennorth.se/index.php/Radonm%C3%A4tningar target="_blank">Radonmätningar</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Radon surveys in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#cc0b3ef8254b013b9d23896d3dc78c41">Radon surveys in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            environment 
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/radon-surveys">http://opendata.opennorth.se/dataset/radon-surveys</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100155">http://eurovoc.europa.eu/100155</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="e197432cb6476435bc6fecd3ae84cffc">
+    <div class="title">
+        <h1>Recreational Facilities in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Recreational facilities in the Municipality of Umeå. Data is extracted regularly from two systems containing information about recreational facilities and recreational areas. More information about the data at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_anl%C3%A4ggningsdata target="_blank">Information om anläggningsdata</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/2">https://dcat-editor.com/store/66/resource/2</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/monthly">http://purl.org/cld/freq/monthly</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Recreational facilities in the Municipality of Umeå. Data is extracted regularly from two systems containing information about recreational facilities and recreational areas. More information about the data at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_anl%C3%A4ggningsdata target="_blank">Information om anläggningsdata</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Recreational Facilities in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5b0ff8df5d1ac2367dd1b8a84cda81eb">Recreational Facilities in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            geocode recreation sport
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/recreational-facilities">http://opendata.opennorth.se/dataset/recreational-facilities</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100149">http://eurovoc.europa.eu/100149</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="8783dbb0e73598c58f4192a2a0f4c800">
+    <div class="title">
+        <h1>Secondary schools in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Adresses, geolocations etc for the Secondary schools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_gymnasieskolor target="_blank">Information om gymnasieskolor</a> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/61">https://dcat-editor.com/store/66/resource/61</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/irregular">http://purl.org/cld/freq/irregular</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Adresses, geolocations etc for the Secondary schools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at <a href=http://wiki.openumea.se/index.php/Metadata/Information_om_gymnasieskolor target="_blank">Information om gymnasieskolor</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Secondary schools in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#06e02fe92a681649dc4b09ece40d694b">Secondary schools in Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#keyword">Keyword</a></td>
+                    <td>
+                    
+                        
+                            geocode schools
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100161">http://eurovoc.europa.eu/100161</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="f1e4f704ae5b6f1a0c01a5e57df69489">
+    <div class="title">
+        <h1>Suppliers ledger (Leverantörsreskontra)</h1>
+    </div>
+    <div class="type">
+        <h2>Dataset</h2>
+    </div>
+    <div class="desc">Suppliers Ledger (leverantörsrekontra) for the Municipality of Umeå. Data is extracted once a year. Private citizens etc are consolidated into one row to protect their privacy.  </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/45">https://dcat-editor.com/store/66/resource/45</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/cld/freq/annual">http://purl.org/cld/freq/annual</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Suppliers Ledger (leverantörsrekontra) for the Municipality of Umeå. Data is extracted once a year. Private citizens etc are consolidated into one row to protect their privacy. 
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/publisher">Publisher</a></td>
+                    <td>
+                    
+                        
+                            <a href="#5d7c3f969304f6ae181228a8d7f75958">Umeå Kommun/Municipality of Umeå</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
+                    <td>
+                    
+                        
+                            <a href="#2ce9047eef7e1cc8b5a06ab193eb0bf2">Umeå Kommun</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Suppliers ledger (Leverantörsreskontra)
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#contactPoint">adms:contactPoint</a></td>
+                    <td>
+                    
+                        
+                            <a href="#8ba4fe76a68b2d1b70cadd51bdef37ec">Administrator OpenNorth</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">Distribution</a></td>
+                    <td>
+                    
+                        
+                            <a href="#55bba4db04c169cdba9733c24b5fac27">Suppliers ledger (Leverantörsreskontra)</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#landingPage">Landing Page</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/suppliers-ledger">http://opendata.opennorth.se/dataset/suppliers-ledger</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#theme">Theme</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://eurovoc.europa.eu/100146">http://eurovoc.europa.eu/100146</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="636c63d8426c61f7fdd79af8ee8e7e54">
+    <div class="title">
+        <h1>Air quality in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Data regarding the air quality in the Municipality of Umea from the city´s sensors in a datastore in CKAN. It is also possible to download data as a csv-file.  </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/44">https://dcat-editor.com/store/66/resource/44</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Data regarding the air quality in the Municipality of Umea from the city´s sensors in a datastore in CKAN. It is also possible to download data as a csv-file. 
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            CKAN Datastore (PostgreSQL-database) text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2015-06-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Air quality in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/environment">http://opendata.opennorth.se/dataset/environment</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#downloadURL">Download Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/environment/resource/34c89e96-70e7-4761-9aac-017841858cea">http://opendata.opennorth.se/dataset/environment/resource/34c89e96-70e7-4761-9aac-017841858cea</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="e47394836688568ca1927362c178d5a2">
+    <div class="title">
+        <h1>Air quiality in Umeå (RDF)</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">A subset of the air quality data in RDF-format. Basically a test of describing a dataset on the field level in RDF  </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/71">https://dcat-editor.com/store/66/resource/71</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            A subset of the air quality data in RDF-format. Basically a test of describing a dataset on the field level in RDF 
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            application/rdf+xml
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Air quiality in Umeå (RDF)
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/UnderDevelopment">http://purl.org/adms/status/UnderDevelopment</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/environment">http://opendata.opennorth.se/dataset/environment</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="47ec62cec85fbe7c3ff18e21540fe849">
+    <div class="title">
+        <h1>Budget Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Budget for the municipality of Umeå data in a csv-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/23">https://dcat-editor.com/store/66/resource/23</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Budget for the municipality of Umeå data in a csv-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2015-06-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Budget Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/UnderDevelopment">http://purl.org/adms/status/UnderDevelopment</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/budget-umea">http://opendata.opennorth.se/dataset/budget-umea</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="9e3117e29e50df7ddde8b5216aed8a3f">
+    <div class="title">
+        <h1>Bus stops in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Information about busstops in the Municipality of Umeå in a csv-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/56">https://dcat-editor.com/store/66/resource/56</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Information about busstops in the Municipality of Umeå in a csv-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            application/vnd.oasis.opendocument.spreadsheet
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2012-09-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Bus stops in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/bus-stops-in-umea">http://opendata.opennorth.se/dataset/bus-stops-in-umea</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="221f1bb148110f94ca42740342c558fd">
+    <div class="title">
+        <h1>Elementary schools in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Adresses, geolocations etc for the Elementary schools in the Municipality of Umeå. The data is extracted at irregular intervals. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/66">https://dcat-editor.com/store/66/resource/66</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Adresses, geolocations etc for the Elementary schools in the Municipality of Umeå. The data is extracted at irregular intervals.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2013-09-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Elementary schools in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/elementary-schools">http://opendata.opennorth.se/dataset/elementary-schools</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#downloadURL">Download Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://openumea-storage.s3.amazonaws.com/2013-09-04T10:53:21.855Z/grundskolor.csv">https://openumea-storage.s3.amazonaws.com/2013-09-04T10:53:21.855Z/grundskolor.csv</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="329e33298158f50b478b8d24166adaea">
+    <div class="title">
+        <h1>Employment per agegroup and sex in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Information about levels of employment for the inhabitants of the Municipality of Umeå. The data is extracted at irregular intervals </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/60">https://dcat-editor.com/store/66/resource/60</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Information about levels of employment for the inhabitants of the Municipality of Umeå. The data is extracted at irregular intervals
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            application/vnd.oasis.opendocument.spreadsheet
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2013-01-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Employment per agegroup and sex in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/employment-per-agegroup-and-sex">http://opendata.opennorth.se/dataset/employment-per-agegroup-and-sex</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="2b7ec2e209bd2e4e1f1b1007ddd99372">
+    <div class="title">
+        <h1>Expenses Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Expenses for the municipality of Umeå as a csv-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/48">https://dcat-editor.com/store/66/resource/48</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Expenses for the municipality of Umeå as a csv-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2015-05-26
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Expenses Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/expenses-umea">http://opendata.opennorth.se/dataset/expenses-umea</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#downloadURL">Download Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/expenses-umea/resource/2ef54940-c00e-4990-b397-11408fa6a332">http://opendata.opennorth.se/dataset/expenses-umea/resource/2ef54940-c00e-4990-b397-11408fa6a332</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="5096c7b6f41dde677cf551fa9c293cc8">
+    <div class="title">
+        <h1>Food inspections in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Resulst from the inspection of food serving venues performed by the muncipality of Umeå in an XML-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/19">https://dcat-editor.com/store/66/resource/19</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Resulst from the inspection of food serving venues performed by the muncipality of Umeå in an XML-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            application/xml
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Food inspections in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/food-inspections">http://opendata.opennorth.se/dataset/food-inspections</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="7e60f39efb1fe935624f2c93a2783a0c">
+    <div class="title">
+        <h1>Homes Social Services in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Information about the homes in the municipality of Umeå, e.g. geolocation,in a csv-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/52">https://dcat-editor.com/store/66/resource/52</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Information about the homes in the municipality of Umeå, e.g. geolocation,in a csv-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2013-09-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Homes Social Services in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/homes-social-services">http://opendata.opennorth.se/dataset/homes-social-services</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="55111ce6833f314bca926cd5c88f98a1">
+    <div class="title">
+        <h1>New buildings per year in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Number of new buildings built in the Municipality of Umeå each year in a csv-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/58">https://dcat-editor.com/store/66/resource/58</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Number of new buildings built in the Municipality of Umeå each year in a csv-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            application/vnd.oasis.opendocument.spreadsheet
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2013-01-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            New buildings per year in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/new-buildings-per-year">http://opendata.opennorth.se/dataset/new-buildings-per-year</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="8f0149dad7cfcc876241db008208241a">
+    <div class="title">
+        <h1>Population statistics for Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Population statistics for the municipality of Umea as a csv-file. The files decribing the "key areas" are in these formats: .shp, .dbf, .idx, .prj, shx  </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/17">https://dcat-editor.com/store/66/resource/17</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Population statistics for the municipality of Umea as a csv-file. The files decribing the "key areas" are in these formats: .shp, .dbf, .idx, .prj, shx 
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                             .shp, .dbf, .idx, .prj, shx text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Population statistics for Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/population-statistics">http://opendata.opennorth.se/dataset/population-statistics</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="63d2bf6d6e7199d4044c85ea6e5fda13">
+    <div class="title">
+        <h1>Preschools in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">CSV-file with som basic info regarding preschools in the municipality </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/68">https://dcat-editor.com/store/66/resource/68</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            CSV-file with som basic info regarding preschools in the municipality
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2013-09-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Preschools in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/preschools">http://opendata.opennorth.se/dataset/preschools</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="7c3568362287a24592aa7f3e1541cef6">
+    <div class="title">
+        <h1>Public Libraries in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Adresses, geolocations etc for the Public Libraries in a csv-file </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/64">https://dcat-editor.com/store/66/resource/64</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Adresses, geolocations etc for the Public Libraries in a csv-file
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2013-06-01
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Public Libraries in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/pub">http://opendata.opennorth.se/dataset/pub</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="cc0b3ef8254b013b9d23896d3dc78c41">
+    <div class="title">
+        <h1>Radon surveys in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Radon surveys in Umeå in an xml-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/21">https://dcat-editor.com/store/66/resource/21</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Radon surveys in Umeå in an xml-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            application/xml
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Radon surveys in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/radon-surveys">http://opendata.opennorth.se/dataset/radon-surveys</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="5b0ff8df5d1ac2367dd1b8a84cda81eb">
+    <div class="title">
+        <h1>Recreational Facilities in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Recreational facilities in the Municipality of Umeå in an xml-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/3">https://dcat-editor.com/store/66/resource/3</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Recreational facilities in the Municipality of Umeå in an xml-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            application/xml
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+                    <td>
+                    
+                        
+                            2015-06-11
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Recreational Facilities in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/recreational-facilities">http://opendata.opennorth.se/dataset/recreational-facilities</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="06e02fe92a681649dc4b09ece40d694b">
+    <div class="title">
+        <h1>Secondary schools in Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Adresses, geolocations etc for the Secondary schools in the Municipality of Umeå in a csv-file. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/62">https://dcat-editor.com/store/66/resource/62</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Adresses, geolocations etc for the Secondary schools in the Municipality of Umeå in a csv-file.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Secondary schools in Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/secondary-schools">http://opendata.opennorth.se/dataset/secondary-schools</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="55bba4db04c169cdba9733c24b5fac27">
+    <div class="title">
+        <h1>Suppliers ledger (Leverantörsreskontra)</h1>
+    </div>
+    <div class="type">
+        <h2>Distribution</h2>
+    </div>
+    <div class="desc">Suppliers Ledger (leverantörsrekontra) for the Municipality of Umeå. Data is extracted once a year. Private citizens etc are consolidated into one row to protect their privacy. </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/46">https://dcat-editor.com/store/66/resource/46</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+                    <td>
+                    
+                        
+                            Suppliers Ledger (leverantörsrekontra) for the Municipality of Umeå. Data is extracted once a year. Private citizens etc are consolidated into one row to protect their privacy.
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
+                    <td>
+                    
+                        
+                            text/csv
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/title">Title</a></td>
+                    <td>
+                    
+                        
+                            Suppliers ledger (Leverantörsreskontra)
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/adms#status">Status</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/status/Completed">http://purl.org/adms/status/Completed</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#accessURL">Access Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/suppliers-ledger">http://opendata.opennorth.se/dataset/suppliers-ledger</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/ns/dcat#downloadURL">Download Url</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opendata.opennorth.se/dataset/suppliers-ledger/resource/c8b22a50-d152-4b94-8119-a1145eb10dac">http://opendata.opennorth.se/dataset/suppliers-ledger/resource/c8b22a50-d152-4b94-8119-a1145eb10dac</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="2ce9047eef7e1cc8b5a06ab193eb0bf2">
+    <div class="title">
+        <h1>Umeå Kommun</h1>
+    </div>
+    <div class="type">
+        <h2></h2>
+    </div>
+    <div class="desc"> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://sws.geonames.org/602149/">http://sws.geonames.org/602149</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/2000/01/rdf-schema#label">Label</a></td>
+                    <td>
+                    
+                        
+                            Umeå Kommun
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="393f0bee16fd8e350676f9e33d4bb7c5">
+    <div class="title">
+        <h1>Västerbotten</h1>
+    </div>
+    <div class="type">
+        <h2></h2>
+    </div>
+    <div class="desc"> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://sws.geonames.org/2664415/">http://sws.geonames.org/2664415</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/2000/01/rdf-schema#label">Label</a></td>
+                    <td>
+                    
+                        
+                            Västerbotten
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="5d7c3f969304f6ae181228a8d7f75958">
+    <div class="title">
+        <h1>Umeå Kommun/Municipality of Umeå</h1>
+    </div>
+    <div class="type">
+        <h2>Agent</h2>
+    </div>
+    <div class="desc"> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/1">https://dcat-editor.com/store/66/resource/1</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://purl.org/adms/publishertype/LocalAuthority">http://purl.org/adms/publishertype/LocalAuthority</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://xmlns.com/foaf/0.1/homepage">Homepage</a></td>
+                    <td>
+                    
+                        
+                            <a href=http://www.opennorth.se target="_blank">http://www.opennorth.se</a>
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://xmlns.com/foaf/0.1/mbox">Personal Mailbox</a></td>
+                    <td>
+                    
+                        
+                            <a href="mailto:admin.openumea@umea.se">mailto:admin.openumea@umea.se</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://xmlns.com/foaf/0.1/name">Name</a></td>
+                    <td>
+                    
+                        
+                            Umeå Kommun/Municipality of Umeå
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="49c0b1f8891b8c975400ec3c9e37b1f7">
+    <div class="title">
+        <h1>N15ab45c3f67d4e65b6ec2093c28d6e9b</h1>
+    </div>
+    <div class="type">
+        <h2>Rights Statement</h2>
+    </div>
+    <div class="desc"> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="N15ab45c3f67d4e65b6ec2093c28d6e9b">N15ab45c3f67d4e65b6ec2093c28d6e9b</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://schema.theodi.org/odrs#reuserGuidelines">Guidelines For Re-Users</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://opennorth.se/datasets/clarification">http://opennorth.se/datasets/clarification</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://schema.theodi.org/odrs#RightsStatement">odrs:RightsStatement</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+    <div class="rdf_obj" id="8ba4fe76a68b2d1b70cadd51bdef37ec">
+    <div class="title">
+        <h1>Administrator OpenNorth</h1>
+    </div>
+    <div class="type">
+        <h2>Organization</h2>
+    </div>
+    <div class="desc"> </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#about">About</a></td>
+                    <td>
+                    
+                        
+                            <a href="https://dcat-editor.com/store/66/resource/70">https://dcat-editor.com/store/66/resource/70</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">Type</a></td>
+                    <td>
+                    
+                        
+                            <a href="http://www.w3.org/2006/vcard/ns#Organization">vcard:Organization</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/2006/vcard/ns#fn">Formatted Name</a></td>
+                    <td>
+                    
+                        
+                            Administrator OpenNorth
+                        
+                    
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="http://www.w3.org/2006/vcard/ns#hasEmail">Has Email</a></td>
+                    <td>
+                    
+                        
+                            <a href="mailto:admin.openumea@umea.se">mailto:admin.openumea@umea.se</a><br />
+                        
+                    
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>
+
+</html>

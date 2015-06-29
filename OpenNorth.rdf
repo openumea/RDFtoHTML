@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:store="https://dcat-editor.com/store/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:odrs="http://schema.theodi.org/odrs#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:es="http://entrystore.org/terms/"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/">
+<dcat:Catalog rdf:about="https://dcat-editor.com/store/66/resource/dcat">
+	<dcterms:title xml:lang="em">OpenNorth</dcterms:title>
+	<dcterms:description xml:lang="en">OpenNorth is a cooperation between the municipalities of Umeå and Skellefteå. The cooperation revolves around open data and this catalog describes tha open data that are published by the municipalties and other actors who choose to publish their data on our site.</dcterms:description>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/2"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/4"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/18"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/20"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/22"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/24"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/45"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/47"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/51"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/55"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/57"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/59"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/61"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/63"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/65"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/66/resource/67"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<foaf:homepage>http://opendata.opennorth.se/</foaf:homepage>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/2664415/"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+	<dcterms:rights rdf:nodeID="node19v7qdqmrx1"/>
+</dcat:Catalog>
+<rdf:Description rdf:about="http://sws.geonames.org/2664415/">
+	<rdfs:label xml:lang="en">Västerbotten</rdfs:label>
+</rdf:Description>
+<odrs:RightsStatement rdf:nodeID="node19v7qdqmrx1">
+	<odrs:reuserGuidelines rdf:resource="http://opennorth.se/datasets/clarification"/>
+</odrs:RightsStatement>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/51">
+	<dcterms:title xml:lang="en">Homes Social Services in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Information about the homes in the municipality of Umeå, e.g. geolocation, that services the elderly and disabled. The data is extracted at irregular intervals More info at http://wiki.openumea.se/index.php/Metadata/Information_om_%C3%A4ldreboenden d</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/52"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>geocode social services</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100161"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/homes-social-services"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<foaf:Agent rdf:about="https://dcat-editor.com/store/66/resource/1">
+	<foaf:name>Umeå Kommun/Municipality of Umeå</foaf:name>
+	<foaf:mbox rdf:resource="mailto:admin.openumea@umea.se"/>
+	<foaf:homepage>http://www.opennorth.se</foaf:homepage>
+	<dcterms:type rdf:resource="http://purl.org/adms/publishertype/LocalAuthority"/>
+</foaf:Agent>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/52">
+	<dcterms:title xml:lang="en">Homes Social Services in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Information about the homes in the municipality of Umeå, e.g. geolocation,in a csv-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/homes-social-services"/>
+	<dcterms:issued>2013-09-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<vcard:Organization rdf:about="https://dcat-editor.com/store/66/resource/70">
+	<vcard:fn>Administrator OpenNorth</vcard:fn>
+	<vcard:hasEmail rdf:resource="mailto:admin.openumea@umea.se"/>
+</vcard:Organization>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/59">
+	<dcterms:title xml:lang="en">Employment per agegroup and sex in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">nformation about levels of employment for the inhabitants of the Municipality of Umeå. The data is extracted at irregular intervals. More info at http://wiki.opennorth.se/index.php/Anst%C3%A4llning_per_%C3%A5ldersgrupp_och_k%C3%B6n</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/60"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>Employment statistics</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100153"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/employment-per-agegroup-and-sex"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/60">
+	<dcterms:title xml:lang="en">Employment per agegroup and sex in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Information about levels of employment for the inhabitants of the Municipality of Umeå. The data is extracted at irregular intervals</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/employment-per-agegroup-and-sex"/>
+	<dcterms:issued>2013-01-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/vnd.oasis.opendocument.spreadsheet</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/67">
+	<dcterms:title xml:lang="en">Preschools in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Adresses, geolocations etc for the Preschools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at http://wiki.openumea.se/index.php/Metadata/Information_om_f%C3%B6rskolor</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/68"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>geocode schools</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100161"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/68">
+	<dcterms:title xml:lang="en">Preschools in Umeå</dcterms:title>
+	<dcterms:description>CSV-file with som basic info regarding preschools in the municipality</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/preschools"/>
+	<dcterms:issued>2013-09-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/57">
+	<dcterms:title xml:lang="en">New buildings per year in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Number of new buildings built in the Municipality of Umeå each year. There is also numbers of rooms built (latter years only). The data is extracted at irregular intervals. More info at http://wiki.opennorth.se/index.php/Nya_byggnader_per_%C3%A5r</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/58"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>buildings statistics</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/new-buildings-per-year"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/58">
+	<dcterms:title xml:lang="en">New buildings per year in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Number of new buildings built in the Municipality of Umeå each year in a csv-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/new-buildings-per-year"/>
+	<dcterms:issued>2013-01-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/vnd.oasis.opendocument.spreadsheet</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/55">
+	<dcterms:title xml:lang="en">Bus stops in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Information about busstops in the Municipality of Umeå, i e the geocodes for the busstops. The data is extraced at irregular intervals. More info at http://wiki.openumea.se/index.php/Metadata/Information_om_bussh%C3%A5llplatser. If you want more actual data, please investigate the API at Trafiklab - http://www.trafiklab.se/api</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/56"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>public transport geocode</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100154"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/bus-stops-in-umea"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/56">
+	<dcterms:title xml:lang="en">Bus stops in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Information about busstops in the Municipality of Umeå in a csv-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/bus-stops-in-umea"/>
+	<dcterms:issued>2012-09-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/vnd.oasis.opendocument.spreadsheet</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/63">
+	<dcterms:title xml:lang="en">Public Libraries in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Adresses, geolocations etc for the Public Libraries in the Municipality of Umeå. The data is extracted at irregular intervals. More info at http://wiki.opennorth.se/index.php/Metadata/Information_om_bibliotek</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/64"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>geocode library</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100161"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/pub"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/64">
+	<dcterms:title>Public Libraries in Umeå</dcterms:title>
+	<dcterms:description>Adresses, geolocations etc for the Public Libraries in a csv-file</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/pub"/>
+	<dcterms:issued>2013-06-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/2">
+	<dcterms:title xml:lang="en">Recreational Facilities in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Recreational facilities in the Municipality of Umeå. Data is extracted regularly from two systems containing information about recreational facilities and recreational areas. More information about the data at http://wiki.openumea.se/index.php/Metadata/Information_om_anl%C3%A4ggningsdata</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/3"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>geocode recreation sport</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100149"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/monthly"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/recreational-facilities"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/3">
+	<dcterms:title xml:lang="en">Recreational Facilities in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Recreational facilities in the Municipality of Umeå in an xml-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/recreational-facilities"/>
+	<dcterms:issued>2015-06-11</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/xml</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/65">
+	<dcterms:title xml:lang="en">Elementary schools in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Adresses, geolocations etc for the Elementary schools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at http://wiki.openumea.se/index.php/Metadata/Information_om_grundskolor</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/66"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>geocode schools</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100161"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/elementary-schools"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/66">
+	<dcterms:title xml:lang="en">Elementary schools in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Adresses, geolocations etc for the Elementary schools in the Municipality of Umeå. The data is extracted at irregular intervals.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/elementary-schools"/>
+	<dcterms:issued>2013-09-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+	<dcat:downloadURL rdf:resource="https://openumea-storage.s3.amazonaws.com/2013-09-04T10:53:21.855Z/grundskolor.csv"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/18">
+	<dcterms:title xml:lang="en">Food Inspections in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Result from the inspection of food serving venues performed by the muncipality of Umeå. The data is extracted regularly. A description of the content of the file can be found here: http://openumeawiki.se/index.php/Metadata/Information_om_h%C3%A4lsoskyddsinspektioner</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/19"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>health food</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100147"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/monthly"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/food-inspections"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/19">
+	<dcterms:title>Food inspections in Umeå</dcterms:title>
+	<dcterms:description>Resulst from the inspection of food serving venues performed by the muncipality of Umeå in an XML-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/food-inspections"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/xml</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/61">
+	<dcterms:title xml:lang="en">Secondary schools in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Adresses, geolocations etc for the Secondary schools in the Municipality of Umeå. The data is extracted at irregular intervals. More info at http://wiki.openumea.se/index.php/Metadata/Information_om_gymnasieskolor</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/62"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>geocode schools</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100161"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/irregular"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/62">
+	<dcterms:title xml:lang="en">Secondary schools in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Adresses, geolocations etc for the Secondary schools in the Municipality of Umeå in a csv-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/secondary-schools"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/47">
+	<dcterms:title xml:lang="en">Expenses Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Expenses for for the municipality of Umeå data encoded according to the encoding standard issued by Statistics Sweden in connection with their compiling of the yearly report "Räkenskapssammandrag för kommuner och landsting". The encoding makes it possible to compare this data regarding actual expenses with the budget data published on this URL: http://opendata.opennorth.se/dataset/budget-umea
+
+The data is encoded in UTF-8 which means that Swedish characters will turn up wrong in Microsoft Excel. This can be avoided by importing the data into Excel as text and choose the option thats says something like "Unicode UTF-8" at the appropriate multi-choice box. The box has the label "Filursprung" in Excel 2010.
+
+More info at http://wiki.opennorth.se/index.php/Ekonomiskt_utfall</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/48"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>economy expenses</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100146"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/monthly"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/expenses-umea"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/48">
+	<dcterms:title>Expenses Umeå</dcterms:title>
+	<dcterms:description>Expenses for the municipality of Umeå as a csv-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/expenses-umea"/>
+	<dcterms:issued>2015-05-26</dcterms:issued>
+	<dcterms:format>text/csv</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+	<dcat:downloadURL rdf:resource="http://opendata.opennorth.se/dataset/expenses-umea/resource/2ef54940-c00e-4990-b397-11408fa6a332"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/22">
+	<dcterms:title xml:lang="en">Budget Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Budget for the municipality of Umeå data encoded according to the encoding standard issued by Statistics Sweden in connection with their compiling of the yearly report "Räkenskapssammandrag för kommuner och landsting".
+
+The data is encoded in UTF-8 which means that Swedish characters will turn up wrong in Microsoft Excel. This can be avoided by importing the data into Excel as text and choose the option thats says something like "Unicode UTF-8" at the appropriate multi-choice box. The box has the label "Filursprung" in Excel 2010.
+
+More info at http://wiki.opennorth.se/index.php/Metadata/Information_om_budgetdata</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/23"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>economy budget</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100146"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/monthly"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/budget-umea"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/23">
+	<dcterms:title xml:lang="en">Budget Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Budget for the municipality of Umeå data in a csv-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/budget-umea"/>
+	<dcterms:issued>2015-06-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/4">
+	<dcterms:title xml:lang="en">Population Statistics for Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Population statistics regarding the citizens of Umeå and mapfiles describing Key Code Areas. The population data are extracted regulary. The data describing "Key Code Areas" are extracted irregulary.
+
+The population data is distributed by statistical "Key Code Areas" that divides the municipality of Umea into a number of geographical areas. A map showing the Key Codes Areas can be found here: http://www.umea.se/download/18.6cb02deb13d3f84af7a10d95/1364990076464/Karta_2siffernykon.pdf
+
+You will find more information regarding the population data (the CSV-file) at: http://wiki.openumea.se/index.php/Metadata/Information_om_befolkningen
+
+The Key Code Areas are used in a lot of different statistics. Data regarding the Key Code Areas was collected in december 2013. The Key Codes are very seldom changed. This is the key code that consists of two characters. The division into smaller key areas (using six characters) that gives a more comminuted division of the area of the municipality is not published. You find more information about the files that maps out the Key Code Areas at (http://wiki.openumea.se/index.php/Metadata/Information_om_nyckelkodsomr%C3%A5den)</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/17"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword> population statistics</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcterms:issued>2015-06-01</dcterms:issued>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100149"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/monthly"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/population-statistics"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/17">
+	<dcterms:title>Population statistics for Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Population statistics for the municipality of Umea as a csv-file. The files decribing the "key areas" are in these formats: .shp, .dbf, .idx, .prj, shx </dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/population-statistics"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<dcterms:format> .shp, .dbf, .idx, .prj, shx</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/45">
+	<dcterms:title xml:lang="en">Suppliers ledger (Leverantörsreskontra)</dcterms:title>
+	<dcterms:description xml:lang="en">Suppliers Ledger (leverantörsrekontra) for the Municipality of Umeå. Data is extracted once a year. Private citizens etc are consolidated into one row to protect their privacy. </dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/46"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100146"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/annual"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/suppliers-ledger"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/46">
+	<dcterms:title xml:lang="en">Suppliers ledger (Leverantörsreskontra)</dcterms:title>
+	<dcterms:description xml:lang="en">Suppliers Ledger (leverantörsrekontra) for the Municipality of Umeå. Data is extracted once a year. Private citizens etc are consolidated into one row to protect their privacy.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/suppliers-ledger"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+	<dcat:downloadURL rdf:resource="http://opendata.opennorth.se/dataset/suppliers-ledger/resource/c8b22a50-d152-4b94-8119-a1145eb10dac"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/20">
+	<dcterms:title xml:lang="en">Radon surveys in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Result from the radon surveys performed by the muncipality of Umeå. The data is extracted regularly. More information about the content of the file can be found here: http://wiki.opennorth.se/index.php/Radonm%C3%A4tningar</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/21"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>environment </dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/monthly"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/radon-surveys"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/21">
+	<dcterms:title>Radon surveys in Umeå</dcterms:title>
+	<dcterms:description>Radon surveys in Umeå in an xml-file.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/radon-surveys"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/xml</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/66/resource/24">
+	<dcterms:title xml:lang="en">Air quality in Umeå</dcterms:title>
+	<dcterms:description xml:lang="en">Data regarding the air quality in the Municipality of Umea from the city´s sensors. The levels of NO2 and PM10 is extracted every 15 minutes (the average of four measurements of the levels during the last 60 minutes). More info at http://wiki.openumea.se/index.php/Metadata/Information_om_luftkvalitetm%C3%A4tningar</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/44"/>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/66/resource/71"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/66/resource/1"/>
+	<dcat:keyword>environment pm10 no2</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/66/resource/70"/>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100155"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/continuous"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/602149/"/>
+	<dcat:landingPage rdf:resource="http://opendata.opennorth.se/dataset/environment"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+</dcat:Dataset>
+<rdf:Description rdf:about="http://sws.geonames.org/602149/">
+	<rdfs:label xml:lang="en">Umeå Kommun</rdfs:label>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/71">
+	<dcterms:title>Air quiality in Umeå (RDF)</dcterms:title>
+	<dcterms:description>A subset of the air quality data in RDF-format. Basically a test of describing a dataset on the field level in RDF </dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/environment"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/rdf+xml</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+</dcat:Distribution>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/66/resource/44">
+	<dcterms:title>Air quality in Umeå</dcterms:title>
+	<dcterms:description>Data regarding the air quality in the Municipality of Umea from the city´s sensors in a datastore in CKAN. It is also possible to download data as a csv-file. </dcterms:description>
+	<dcat:accessURL rdf:resource="http://opendata.opennorth.se/dataset/environment"/>
+	<dcterms:issued>2015-06-01</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/csv</dcterms:format>
+	<dcterms:format>CKAN Datastore (PostgreSQL-database)</dcterms:format>
+	<adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+	<dcat:downloadURL rdf:resource="http://opendata.opennorth.se/dataset/environment/resource/34c89e96-70e7-4761-9aac-017841858cea"/>
+</dcat:Distribution>
+</rdf:RDF>

@@ -2,10 +2,12 @@
 Contains code related to outputing HTML
 """
 import codecs
-
 from rdflib.term import URIRef, BNode, Literal
+from django.template import Context
+from django.template.loader import get_template
+from django.conf import settings
 
-from utils import get_link, format_literal
+from utils import format_literal
 
 RDF_ABOUT = URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#about')
 
@@ -15,6 +17,7 @@ DISTRIBUTION = URIRef(u'http://www.w3.org/ns/dcat#Distribution')
 
 OBJ_ORDER = [CATALOG, DATASET, DISTRIBUTION]
 
+
 class HtmlConverter(object):
     """
     Class that converts a dictionary of RdfObjects into HTML
@@ -23,6 +26,13 @@ class HtmlConverter(object):
     def __init__(self, rdf_objects, ns_mgr):
         self.objects = rdf_objects
         self._ns_mgr = ns_mgr
+
+        # Init templates
+
+        settings.configure(
+            TEMPLATE_DIRS=('templates',),
+            TEMPLATE_LOADERS=("django.template.loaders.filesystem.Loader",),
+            TEMPLATE_DEBUG=True)
 
     def output_html(self, path, language):
         """
@@ -38,37 +48,42 @@ class HtmlConverter(object):
             if obj not in objects:
                 objects.append(obj)
 
-        with codecs.open(path, 'w', 'utf-8') as output_file:
-            output_file.write('<html>')
-            write_head(output_file)
-            for obj in objects:
-                output_file.write('<div class="rdf_obj" id="%s">' % obj.fragment)
-                summary = self._format_summary(obj, language)
-                node = self._format_node(obj, language)
-                output_file.write(summary)
-                output_file.write(node)
-                output_file.write('</div>')
+        main_template = get_template('main.html')
 
-            output_file.write('</html>')
+        nodes = []
+        for obj in objects:
+            node_dict = {'node_id': obj.fragment}
+            summary = self._format_summary(obj, language)
+            attributes = self._format_node(obj, language)
+
+            node_dict.update(summary)
+            node_dict.update({'attributes': attributes})
+
+            nodes.append(node_dict)
+
+        with codecs.open(path, 'w', 'utf-8') as output_file:
+            context = Context({'nodes': nodes})
+            out = main_template.render(context)
+            output_file.write(out)
 
     def _format_summary(self, rdf_obj, language):
         """
         Generate a summary for an RDF node
         """
-        out = ''
         # Try to find something to use as a title and a description
         title = rdf_obj.get_title(language)
         desc = rdf_obj.get_description(language)
         rdf_type = rdf_obj.get_canoical_type()
 
+        out = {}
         if title:
-            out += '<div class="title"><h1>%s</h1></div>' % title
+            out['title'] = title
 
         if rdf_type:
-            out += '<div class="type"><h2>%s</h2></div>' % rdf_type
+            out['title'] = rdf_type
 
         if desc:
-            out += '<div class="desc">%s</div>' % desc
+            out['desc'] = desc
 
         return out
 
@@ -82,28 +97,28 @@ class HtmlConverter(object):
         if not include:
             include = sorted(rdf_obj.attributes.keys())
 
-        out = '<div class="full_info"><table>'
-
+        attributes = []
         # Add the RDF id att the top
-        out += '<tr><td>'
-        link, title = self._format_uriref(RDF_ABOUT, language)
-        out += get_link(link, title)
-        out += '</td><td>'
-        out += get_link(rdf_obj.id, rdf_obj.id)
-        out += '</td></tr>'
+        pred_link, pred_title = self._format_uriref(RDF_ABOUT, language)
+        attributes.append({
+            'pred_link': pred_link,
+            'pred_title': pred_title,
+            'objs': [self._format_uriref(rdf_obj.id, language,
+                                         skip_local=True)],
+        })
+
         for pred in sorted(include):
             try:
                 obj_list = rdf_obj.attributes[pred]
             except KeyError:
                 # Skip the desired attributes if they are not present
                 continue
-            out += '<tr><td>'
-            link, title = self._format_uriref(pred, language)
-            out += get_link(link, title)
-            out += '</td><td>'
+            pred_link, pred_title = self._format_uriref(pred, language)
+
+            objs = []
             if obj_list and isinstance(obj_list[0], Literal):
                 literals = format_literal(obj_list, language)
-                out += '<br />'.join(literals)
+                objs.append((' '.join(literals), None))
             else:
                 # Get the other objects and sort them based on their title
                 new_list = []
@@ -112,24 +127,31 @@ class HtmlConverter(object):
                         new_list.append(self._format_uriref(obj, language))
                     elif isinstance(obj, BNode):
                         new_list.append(self._format_bnode(obj, language))
-                new_list = sorted(new_list, key=lambda t: t[1])
-                for link, value in new_list:
-                    out += get_link(link, value)
 
-            out += '</td></tr>'
-        out += '</table></div>'
+                new_list = sorted(new_list, key=lambda t: t[1])
+
+                for link, value in new_list:
+                    obj_link = link
+                    obj_title = value
+                    objs.append((obj_link, obj_title))
+
+            attributes.append({
+                'pred_link': pred_link,
+                'pred_title': pred_title,
+                'objs': objs,
+
+            })
 
         # Add show more button
-        out += '<a class="show_more">Show more</a>'
-        return out
+        return attributes
 
-    def _format_uriref(self, uri_ref, language):
+    def _format_uriref(self, uri_ref, language, skip_local=False):
         """
         Return the HTML representation of a URIRef
         """
         # Does it point to a local asset?
         local_ref = unicode(uri_ref)
-        if local_ref in self.objects:
+        if not skip_local and local_ref in self.objects:
             return self._format_bnode(uri_ref, language)
 
         # It seems that some URIRefs get normalized with a '<' and a '>'
@@ -144,7 +166,7 @@ class HtmlConverter(object):
         if norm[-1] == '/':
             norm = norm[:len(norm)-1]
 
-        return (uri_ref, norm)
+        return uri_ref, norm
 
     def _format_bnode(self, bnode, language):
         """
@@ -155,9 +177,9 @@ class HtmlConverter(object):
         link = self._get_fragment_link(rdf_id)
         if link:
             title = self.objects[rdf_id].get_title(language)
-            return (link, title)
+            return link, title
 
-        return None
+        return (None, None)
 
     def _get_fragment_link(self, rdf_id):
         """
@@ -169,16 +191,3 @@ class HtmlConverter(object):
 
         except KeyError:
             return None
-
-
-def write_head(output_file):
-    """
-    Write the HTML head to given file
-    """
-    output_file.write('<head>')
-    output_file.write('<link rel="stylesheet" type="text/css"'
-                      'href="style.css">')
-    output_file.write('<meta charset="UTF-8">')
-    output_file.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>')
-    output_file.write('<script src="rdfconv.js"></script>')
-    output_file.write('</head>')

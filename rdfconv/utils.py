@@ -2,15 +2,6 @@
 Contains various utils used by the converter
 """
 
-def get_link(link_to, display_value, linebreak=True):
-    """
-    Get a html link
-    """
-    out = '<a href=%s>%s</a>' % (link_to, display_value)
-    if linebreak:
-        out += '<br />'
-    return out
-
 
 def format_literal(literals, language):
     """

@@ -91,14 +91,13 @@ class RDFtoHTMLConverter(object):
         # Move script and style files
         shutil.copy('includes/style.css', folder)
         shutil.copy('includes/rdfconv.js', folder)
-        os.chdir(folder)
 
         html_conv = HtmlConverter(self.objects, self._ns_mgr)
         for language in self.languages:
             filename = os.path.splitext(self.input_file)[0]
             filename = get_file(filename, language)
-
-            html_conv.output_html(filename, language)
+            path = os.path.join(folder, filename)
+            html_conv.output_html(path, language)
 
 
 def main(input_file, output_folder):

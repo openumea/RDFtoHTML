@@ -1,0 +1,30 @@
+<div class="rdf_obj" id="{{ node.node_id }}">
+    <div class="title">
+        <h1>{{ node.title }}</h1>
+    </div>
+    <div class="type">
+        <h2>{{ node.rdf_type }}</h2>
+    </div>
+    <div class="desc">{{ node.desc }} </div>
+    <div class="full_info">
+        <table>
+            <tbody>
+            {% for attr in node.attributes %}
+                <tr>
+                    <td><a href="{{ attr.pred_link }}">{{ attr.pred_title }}</a></td>
+                    <td>
+                    {% for obj in attr.objs %}
+                        {% if obj.1 %}
+                            <a href="{{ obj.0 }}">{{ obj.1 }}</a><br />
+                        {% else %}
+                            {{ obj.0 }}
+                        {% endif %}
+                    {% endfor %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <a class="show_more">Show more</a>
+</div>

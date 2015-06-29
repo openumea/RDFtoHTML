@@ -9,5 +9,4 @@ Setup
 
 Run
 ---
-Run the script `python main.py DCAT_INPUT_FILE OUTPUT_FOLDER`.
-The script will generate one file per language in the input file.
+Run `python main.py -h` for help

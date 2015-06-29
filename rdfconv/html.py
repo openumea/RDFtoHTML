@@ -29,10 +29,11 @@ class HtmlConverter(object):
 
         # Init templates
 
-        settings.configure(
-            TEMPLATE_DIRS=('templates',),
-            TEMPLATE_LOADERS=("django.template.loaders.filesystem.Loader",),
-            TEMPLATE_DEBUG=True)
+        if not settings.configured:
+            settings.configure(
+                TEMPLATE_DIRS=('templates',),
+                TEMPLATE_LOADERS=("django.template.loaders.filesystem.Loader",),
+                TEMPLATE_DEBUG=True)
 
     def output_html(self, path, language):
         """

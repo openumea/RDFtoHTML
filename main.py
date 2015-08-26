@@ -21,6 +21,8 @@ def gen_index(output_folder):
 
     files = []
     for f in os.listdir(output_folder):
+        if f == 'index.html' or f.startswith('.'):
+            continue
         file_path = os.path.join(output_folder, f)
         if os.path.isfile(file_path) and 'html' in f:
             files.append(f)

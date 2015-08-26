@@ -81,7 +81,7 @@ class HtmlConverter(object):
             out['title'] = title
 
         if rdf_type:
-            out['title'] = rdf_type
+            out['rdf_type'] = rdf_type
 
         if desc:
             out['desc'] = desc

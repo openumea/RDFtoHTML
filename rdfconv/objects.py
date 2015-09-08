@@ -9,11 +9,13 @@ from rdfconv.utils import get_attribute, format_literal
 TYPE = u'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
 TITLE = u'http://purl.org/dc/terms/title'
 FOAF_NAME = u'http://xmlns.com/foaf/0.1/name'
+LABEL = u'http://www.w3.org/2000/01/rdf-schema#label'
+VCARD_NAME = u'http://www.w3.org/2006/vcard/ns#fn'
 DESC = u'http://purl.org/dc/terms/description'
 
 # Attributes with these namespaces are candidates for the summary
 # title/description
-TITLE_CANDIDATES = [TITLE, FOAF_NAME]
+TITLE_CANDIDATES = [TITLE, FOAF_NAME, LABEL, VCARD_NAME]
 DESC_CANDIDATES = [DESC]
 
 

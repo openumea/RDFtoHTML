@@ -8,6 +8,7 @@ from django.template.loader import get_template
 from django.conf import settings
 
 from rdfconv.utils import format_literal
+from rdfconv.predicate import PredicateResolver
 
 RDF_ABOUT = URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#about')
 
@@ -26,6 +27,9 @@ class HtmlConverter(object):
     def __init__(self, rdf_objects, ns_mgr):
         self.objects = rdf_objects
         self._ns_mgr = ns_mgr
+
+        # Predicate resolver
+        self._pred_res = PredicateResolver()
 
         # Init templates
 
@@ -74,14 +78,19 @@ class HtmlConverter(object):
         # Try to find something to use as a title and a description
         title = rdf_obj.get_title(language)
         desc = rdf_obj.get_description(language)
-        rdf_type = rdf_obj.get_canoical_type()
+        rdf_type = rdf_obj.type
 
         out = {}
         if title:
             out['title'] = title
 
         if rdf_type:
-            out['rdf_type'] = rdf_type
+            # Try to resolve the type
+            label = self._pred_res.resolve(rdf_type.toPython(), language)
+            if label:
+                out['rdf_type'] = label
+            else:
+                out['rdf_type'] = rdf_type
 
         if desc:
             out['desc'] = desc
@@ -103,7 +112,7 @@ class HtmlConverter(object):
         pred_link, pred_title = self._format_uriref(RDF_ABOUT, language)
         attributes.append({
             'pred_link': pred_link,
-            'pred_title': pred_title,
+            'pred_title': "About",
             'objs': [self._format_uriref(rdf_obj.id, language,
                                          skip_local=True)],
         })
@@ -114,7 +123,12 @@ class HtmlConverter(object):
             except KeyError:
                 # Skip the desired attributes if they are not present
                 continue
+
             pred_link, pred_title = self._format_uriref(pred, language)
+            # Try to resolve the predicate to a more human readable format
+            label = self._pred_res.resolve(pred_link, language)
+            if label:
+                pred_title = label
 
             objs = []
             if obj_list and isinstance(obj_list[0], Literal):

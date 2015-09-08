@@ -1,8 +1,13 @@
+"""
+Module containing functionallity for resolving predicate names from
+third party sources.
+"""
 import requests
 import rdflib
 import StringIO
 
 LABEL_CANDIDATES = ['http://www.w3.org/2000/01/rdf-schema#label']
+
 
 class PredicateResolver(object):
     """
@@ -14,6 +19,12 @@ class PredicateResolver(object):
         self._parsed = []
 
     def _get_from_cache(self, url, language):
+        """
+        Get the resolved name from the cache.
+        :param url: url of the predicate
+        :param language: language to use
+        :return:
+        """
         if url in self._resolved:
             if language in self._resolved[url]:
                 # Prefered language found
@@ -60,7 +71,8 @@ class PredicateResolver(object):
 
         try:
             resp = requests.get(url, headers=headers)
-        except Exception as err:
+        except Exception as err:  # pylint: disable=W0703
+            # We want to catch all exceptions here
             print 'Unable to download: ', url, '. ', err.message
             print 'Skipping'
             return

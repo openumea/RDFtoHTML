@@ -2,7 +2,6 @@
 Main entry point
 """
 
-import sys
 import os
 import argparse
 from rdfconv.loader import RDFtoHTMLConverter
@@ -18,7 +17,9 @@ def main(input_file, output_folder):
 
 
 def gen_index(output_folder):
-
+    """
+    Generate an index.html file with links to all other generated html files
+    """
     files = []
     for f in os.listdir(output_folder):
         if f == 'index.html' or f.startswith('.'):
@@ -31,7 +32,6 @@ def gen_index(output_folder):
     with open(path, 'w') as output_file:
         for f in files:
             output_file.write('<a href=%s>%s</a><br />' % (f, f))
-
 
 
 if __name__ == '__main__':

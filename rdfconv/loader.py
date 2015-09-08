@@ -2,7 +2,6 @@
 This module contains code for converting RDF-files into HTML
 """
 import os
-import sys
 import logging
 import shutil
 from collections import OrderedDict

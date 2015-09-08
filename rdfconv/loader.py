@@ -17,12 +17,40 @@ from rdfconv.objects import RdfObject
 logging.basicConfig()
 
 
+class Error(Exception):
+    """
+    Base class for exceptions in this module
+    """
+    pass
+
+
+class LanguageError(Error):
+    """
+    Raised when the specified languages differ from the actual languages
+    encountered in the RDF file.
+    """
+    def __init__(self, filename, specified, actual):
+        super(LanguageError, self).__init__()
+        error = 'Languages encountered in RDF file differ from specified ' \
+                'languages %s.\n' +\
+                'Specified: %s\n' +\
+                'Actual:    %s'
+
+        specified = ','.join(sorted(specified))
+        actual = ','.join(sorted(actual))
+
+        self.msg = error % (filename, specified, actual)
+
+    def __str__(self):
+        return self.msg
+
+
 class RDFtoHTMLConverter(object):
     """
     Class representing a RDF to HTML converter
     """
 
-    def __init__(self):
+    def __init__(self, languages='all'):
 
         # References to the underlying graph
         self._graph = None
@@ -33,6 +61,9 @@ class RDFtoHTMLConverter(object):
 
         # Keep track of all languages seen in the RDF
         self.languages = set()
+
+        # Keep track of desired languages
+        self.specified_languages = set(languages)
 
         # The currently loaded file
         self.input_file = None
@@ -77,6 +108,8 @@ class RDFtoHTMLConverter(object):
         for obj in sorted(objects, key=lambda x: x.get_sort_tuple('en')):
             self.objects[obj.id] = obj
 
+        self._validate_languages()
+
     def output_html(self, folder):
         """
         Output one file per language encountered in the rdf file
@@ -97,3 +130,16 @@ class RDFtoHTMLConverter(object):
             filename = get_file(filename, language)
             path = os.path.join(folder, filename)
             html_conv.output_html(path, language)
+
+    def _validate_languages(self):
+        """
+        Make sure the languages specified by the user are the same as those
+        encountered in the RDf file.
+        """
+        if self.specified_languages == 'all':
+            return
+
+        if self.languages != self.specified_languages:
+            raise LanguageError(self.input_file,
+                                self.specified_languages,
+                                self.languages)

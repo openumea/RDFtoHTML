@@ -136,7 +136,7 @@ class RDFtoHTMLConverter(object):
         Make sure the languages specified by the user are the same as those
         encountered in the RDf file.
         """
-        if self.specified_languages == 'all':
+        if 'all' in self.specified_languages:
             return
 
         if self.languages != self.specified_languages:

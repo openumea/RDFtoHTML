@@ -69,6 +69,7 @@ class PredicateResolver(object):
 
         headers = {'Accept': 'application/rdf+xml'}
 
+        print 'Downloading:', url
         try:
             resp = requests.get(url, headers=headers)
         except Exception as err:  # pylint: disable=W0703
@@ -82,7 +83,13 @@ class PredicateResolver(object):
         file_obj.seek(0)
 
         graph = rdflib.Graph()
-        graph.load(file_obj)
+        try:
+            graph.load(file_obj)
+        except Exception as err:
+            # All pages do not supply an XML version of the file
+            # TODO: We should be able to handle turtle format
+            print 'Couldn\'t parse file: %s' % url
+            print err.message
         for subj, pred, obj in graph:
 
             if isinstance(obj, rdflib.Literal) and unicode(pred) in LABEL_CANDIDATES:

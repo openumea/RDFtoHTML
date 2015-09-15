@@ -8,6 +8,17 @@ import StringIO
 
 LABEL_CANDIDATES = ['http://www.w3.org/2000/01/rdf-schema#label']
 
+# All providers don't use the correct way of supplying the rdf
+# so we use this to map the inconsistencies.
+URL_REMAP = {
+    'http://schema.theodi.org/odrs': 'http://schema.theodi.org/odrs/index.ttl',
+}
+
+# All providers don't use xml format so here we map other formats
+FORMATS = {
+    'http://schema.theodi.org/odrs': 'n3',
+}
+
 
 class PredicateResolver(object):
     """
@@ -69,6 +80,14 @@ class PredicateResolver(object):
 
         headers = {'Accept': 'application/rdf+xml'}
 
+        if url in FORMATS:
+            format = FORMATS[url]
+        else:
+            format = 'xml'
+
+        if url in URL_REMAP:
+            url = URL_REMAP[url]
+
         print 'Downloading:', url
         try:
             resp = requests.get(url, headers=headers)
@@ -84,10 +103,8 @@ class PredicateResolver(object):
 
         graph = rdflib.Graph()
         try:
-            graph.load(file_obj)
+            graph.load(file_obj, format=format)
         except Exception as err:
-            # All pages do not supply an XML version of the file
-            # TODO: We should be able to handle turtle format
             print 'Couldn\'t parse file: %s' % url
             print err.message
         for subj, pred, obj in graph:
@@ -100,7 +117,6 @@ class PredicateResolver(object):
                     language = obj.language
                 else:
                     language = 'en'
-
                 self._resolved[subj][language] = unicode(obj.value).title()
 
         self._parsed.append(url)

@@ -10,3 +10,8 @@ Setup
 Run
 ---
 Run `python main.py -h` for help
+
+Automatically generate html
+---------------------------
+Run `./scripts/watch.sh FILES... OUTPUT_DIR` and the script will automatically
+watch the specified files and generate an HTML file when a file is updated.

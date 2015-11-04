@@ -58,3 +58,16 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
 	background: #FFF;
 }
+
+td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+td a {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 100%;
+}

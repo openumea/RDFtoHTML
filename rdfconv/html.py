@@ -2,6 +2,8 @@
 Contains code related to outputing HTML
 """
 import codecs
+from datetime import datetime
+from time import strftime
 from rdflib.term import URIRef, BNode, Literal
 from django.template import Context
 from django.template.loader import get_template
@@ -66,9 +68,14 @@ class HtmlConverter(object):
 
             nodes.append(node_dict)
 
+        # TODO: We might want to add the timezone here
+        date = datetime.now().strftime('%Y-%m-%d %H:%M')
+
+        context = Context({'nodes': nodes,
+                           'date': date})
+        out = main_template.render(context)
+
         with codecs.open(path, 'w', 'utf-8') as output_file:
-            context = Context({'nodes': nodes})
-            out = main_template.render(context)
             output_file.write(out)
 
     def _format_summary(self, rdf_obj, language):

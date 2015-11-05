@@ -140,7 +140,7 @@ class HtmlConverter(object):
             objs = []
             if obj_list and isinstance(obj_list[0], Literal):
                 literals = format_literal(obj_list, language)
-                objs.append((' '.join(literals), None))
+                objs.append((u' '.join(literals), None))
             else:
                 # Get the other objects and sort them based on their title
                 new_list = []

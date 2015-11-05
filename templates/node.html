@@ -5,7 +5,7 @@
     <div class="type">
         <h2>{{ node.rdf_type }}</h2>
     </div>
-    <div class="desc">{{ node.desc }} </div>
+    <div class="desc">{{ node.desc | safe }} </div>
     <div class="full_info">
         <table>
             <tbody>
@@ -17,7 +17,7 @@
                         {% if obj.1 %}
                             <a href="{{ obj.0 }}">{{ obj.1 }}</a><br />
                         {% else %}
-                            {{ obj.0 }}
+                            {{ obj.0 | safe }}
                         {% endif %}
                     {% endfor %}
                     </td>

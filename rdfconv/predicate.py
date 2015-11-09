@@ -104,7 +104,8 @@ class PredicateResolver(object):
         graph = rdflib.Graph()
         try:
             graph.load(file_obj, format=format)
-        except Exception as err:
+        except Exception as err:  # pylint: disable=W0703
+            # We want to catch all exceptions here
             print 'Couldn\'t parse file: %s' % url
             print err.message
         for subj, pred, obj in graph:

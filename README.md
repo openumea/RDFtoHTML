@@ -4,10 +4,10 @@ A collection of scripts for generating human readable versions of DCAT XML
 files.
 
 ## Setup
-Install requirements `pip install -r requirements.txt`
+Run `python setup.py install`.
 
 ## Run
-Run `python main.py -h` for help
+Run `rdf-to-html` for help.
 
 ## Develop
 The generated files can of course be opened manually, but for convenience

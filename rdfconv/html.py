@@ -300,7 +300,7 @@ def _make_link(url, display_name):
     """
     Make a HTML link from an url and a display name
     """
-    return u'<a href=%s>%s</a>' % (url, display_name)
+    return u'<a href=%s target="_blank">%s</a>' % (url, display_name)
 
 
 def _get_preceding_character(string, sub_string):

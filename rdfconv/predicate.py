@@ -88,13 +88,10 @@ class PredicateResolver(object):
         if url in URL_REMAP:
             url = URL_REMAP[url]
 
-        print 'Downloading:', url
         try:
             resp = requests.get(url, headers=headers)
         except Exception as err:  # pylint: disable=W0703
             # We want to catch all exceptions here
-            print 'Unable to download: ', url, '. ', err.message
-            print 'Skipping'
             return
 
         file_obj = StringIO.StringIO()

@@ -3,7 +3,7 @@ Main entry point
 """
 
 import argparse
-from rdfconv.loader import RDFtoHTMLConverter, LanguageError
+from rdfconv.converter import RDFtoHTMLConverter, LanguageError
 
 
 def run(input_file, output_folder, languages='all'):

@@ -18,6 +18,7 @@ setup(
         'rdflib>=4.2.1',
         'django>=1.8.6',
         'requests>=2.8.1',
+        'pyinotify>=0.9.6',
     ],
     entry_points={
         'console_scripts': [

@@ -33,8 +33,8 @@ class LanguageError(Error):
     def __init__(self, filename, specified, actual):
         super(LanguageError, self).__init__()
         error = 'Languages encountered in RDF file differ from specified ' \
-                'languages %s.\n' +\
-                'Specified: %s\n' +\
+                'languages %s.\n\t' +\
+                'Specified: %s\n\t' +\
                 'Actual:    %s'
 
         specified = ','.join(sorted(specified))
@@ -118,7 +118,8 @@ class RDFtoHTMLConverter(object):
         if not os.path.exists(folder):
             os.mkdir(folder)
         elif not os.path.isdir(folder):
-            print folder, 'is not a directory'
+            logging.error('Could not write output. %s is not a directory.',
+                          folder)
             exit(1)
 
         # Move script and style files

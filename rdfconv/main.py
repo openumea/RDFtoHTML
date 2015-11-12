@@ -5,7 +5,6 @@ Main entry point
 import argparse
 import logging
 import sys
-import os.path
 from rdfconv.converter import RDFtoHTMLConverter, LanguageError
 import pyinotify
 
@@ -17,6 +16,7 @@ class EventHandler(pyinotify.ProcessEvent):
         self.languages = languages
 
     def process_default(self, event):
+        logging.info('%s changed', event.path)
         run(event.path, self.output_folder, self.languages)
 
 
@@ -25,10 +25,13 @@ def run(input_file, output_folder, languages='all'):
     Run the RDF converter
     """
     try:
+        logging.info('Converting %s', input_file)
         rdf_conv = RDFtoHTMLConverter(languages)
         rdf_conv.load_file(input_file)
         rdf_conv.output_html(output_folder)
+        logging.info('Finished converting %s', input_file)
     except LanguageError as err:
+        logging.error('Skipped file %s: %s', input_file, err)
 
 
 def watch(input_files, output_folder, languages='all'):

@@ -2,6 +2,7 @@
 Module containing functionallity for resolving predicate names from
 third party sources.
 """
+import logging
 import requests
 import rdflib
 import StringIO
@@ -88,10 +89,12 @@ class PredicateResolver(object):
         if url in URL_REMAP:
             url = URL_REMAP[url]
 
+        logging.info('Downloading %s', url)
         try:
             resp = requests.get(url, headers=headers)
         except Exception as err:  # pylint: disable=W0703
             # We want to catch all exceptions here
+            logging.warning('Unable to download %s. %s', url, err.message)
             return
 
         file_obj = StringIO.StringIO()
@@ -103,8 +106,7 @@ class PredicateResolver(object):
             graph.load(file_obj, format=format)
         except Exception as err:  # pylint: disable=W0703
             # We want to catch all exceptions here
-            print 'Couldn\'t parse file: %s' % url
-            print err.message
+            logging.warning('Unable to parse file: %s. %s', url, err.message)
         for subj, pred, obj in graph:
 
             if isinstance(obj, rdflib.Literal) and unicode(pred) in LABEL_CANDIDATES:

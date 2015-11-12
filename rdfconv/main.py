@@ -45,22 +45,24 @@ def watch(input_files, output_folder, languages='all'):
 
 def main():
     # Handle arguments
-    parser = argparse.ArgumentParser(description='RDF to HTML converter.')
+    parser = argparse.ArgumentParser(
+        description='RDF to HTML converter. Converts one or more RDF files '
+                    'into a more human readable HTML representation.',)
     parser.add_argument('dcat_files', metavar='DCAT_FILE', type=str, nargs='+',
-                        help='DCAT file')
+                        help='DCAT file(s)')
     parser.add_argument('output', metavar='OUTPUT_DIR', type=str,
                         help='Output directory')
     parser.add_argument('--languages', type=str, default='all',
-                        help='Languages to generate separated by comma (,). '
-                             'If omitted all encountered languages are '
-                             'generated.')
+                        help='Languages (on ISO-369-* format) to generate '
+                             'separated by comma (,). If omitted all '
+                             'encountered languages are generated.')
     parser.add_argument('--watch', action='store_true', help='Watch input '
-                        'files for changes and run the conversion whan a '
+                        'files for changes and run the conversion when a '
                         'change occurs.')
     parser.add_argument('--verbose', action='store_true',
-                        help='Only log critical events')
+                        help='Set log level to INFO instead of WARNING')
     parser.add_argument('--log-file', metavar='LOG_FILE',
-                        help='File to log to. If omitted logging'
+                        help='File to log to. If omitted logging '
                              'will be sent to stdout')
 
     args = parser.parse_args()

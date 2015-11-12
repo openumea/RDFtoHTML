@@ -3,6 +3,9 @@ Main entry point
 """
 
 import argparse
+import logging
+import sys
+import os.path
 from rdfconv.converter import RDFtoHTMLConverter, LanguageError
 import pyinotify
 
@@ -26,7 +29,6 @@ def run(input_file, output_folder, languages='all'):
         rdf_conv.load_file(input_file)
         rdf_conv.output_html(output_folder)
     except LanguageError as err:
-        print 'Skipped file %s due to error:\n%s' % (input_file, err)
 
 
 def watch(input_files, output_folder, languages='all'):
@@ -52,8 +54,15 @@ def main():
     parser.add_argument('--watch', action='store_true', help='Watch input '
                         'files for changes and run the conversion whan a '
                         'change occurs.')
+    parser.add_argument('--verbose', action='store_true',
+                        help='Only log critical events')
+    parser.add_argument('--log-file', metavar='LOG_FILE',
+                        help='File to log to. If omitted logging'
+                             'will be sent to stdout')
 
     args = parser.parse_args()
+
+    setup_logging(args.verbose, args.log_file)
 
     langs = args.languages.split(',')
 
@@ -62,6 +71,22 @@ def main():
     else:
         for dcat_file in args.dcat_files:
             run(dcat_file, args.output, langs)
+
+
+def setup_logging(verbose, log_file):
+
+    if verbose:
+        log_level = logging.DEBUG
+    else:
+        log_level = logging.WARN
+
+    if log_file:
+        stream = open(log_file, 'a')
+    else:
+        stream = sys.stdout
+
+    logging.basicConfig(stream=stream, level=log_level,
+                        format='%(asctime)s %(levelname)s %(module)s %(message)s')
 
 
 if __name__ == '__main__':

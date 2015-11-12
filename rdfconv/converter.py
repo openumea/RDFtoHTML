@@ -13,8 +13,9 @@ from rdfconv.utils import get_file
 from rdfconv.html import HtmlConverter
 from rdfconv.objects import RdfObject
 
-# rdflib requires a logger to be setup
-logging.basicConfig()
+if not logging:
+    # rdflib requires a logger to be setup
+    logging.basicConfig()
 
 
 class Error(Exception):

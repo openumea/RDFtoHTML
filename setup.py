@@ -1,9 +1,18 @@
 from setuptools import setup, find_packages
 
+try:
+    import pypandoc
+    long_desc = pypandoc.convert('README.md', 'rst')
+except ImportError:
+    with open('README.md') as readme:
+        long_desc = readme.read()
+
+
 setup(
     name='rdf-to-html',
-    version=1.0,
+    version='1.0',
     description='RDF to HTML converter',
+    long_description=long_desc,
 
     # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[

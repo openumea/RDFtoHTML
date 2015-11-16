@@ -50,6 +50,7 @@ This will enable you to always have an up to date human readable version of your
 To to this setup the following code to be run when the server starts `rdf-to-html --watch DCAT_FILE [DCAT_FILE ...] OUTPUT_DIR`.
 The conversion script will then run everytime the files change.
 
+Our [github pages](http://openumea.github.io/RDFtoHTML) contains an example of a file run through the converter.
 
 ## Develop
 The generated files can of course be opened manually, but for convenience

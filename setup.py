@@ -23,6 +23,7 @@ setup(
     author='Kim Nilsson',
     author_email='kim.nilsson@dohi.se',
     packages=find_packages(),
+    include_package_data=True,
     install_requires=[
         'rdflib>=4.2.1',
         'django>=1.8.6',

@@ -1,6 +1,7 @@
 """
 Contains code related to outputing HTML
 """
+import os
 import codecs
 import urllib2
 import re
@@ -38,8 +39,9 @@ class HtmlConverter(object):
         # Init templates
 
         if not settings.configured:
+            base_dir = os.path.dirname(os.path.abspath(__file__))
             settings.configure(
-                TEMPLATE_DIRS=('templates',),
+                TEMPLATE_DIRS=(os.path.join(base_dir, 'templates'),),
                 TEMPLATE_LOADERS=("django.template.loaders.filesystem.Loader",),
                 TEMPLATE_DEBUG=True)
 

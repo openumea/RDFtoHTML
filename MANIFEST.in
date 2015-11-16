@@ -1,0 +1,3 @@
+include README.md
+recursive-include rdfconv/includes *
+recursive-include rdfconv/templates *

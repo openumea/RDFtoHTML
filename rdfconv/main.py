@@ -10,6 +10,9 @@ import pyinotify
 
 
 class EventHandler(pyinotify.ProcessEvent):
+    """
+    Class handling notifications when a watched file is changed
+    """
     def __init__(self, output_folder, languages):
         super(EventHandler, self).__init__()
         self.output_folder = output_folder
@@ -35,15 +38,22 @@ def run(input_file, output_folder, languages='all'):
 
 
 def watch(input_files, output_folder, languages='all'):
+    """
+    Setup watching of given files
+    """
     handler = EventHandler(output_folder, languages)
-    wm = pyinotify.WatchManager()
-    notifier = pyinotify.Notifier(wm, handler)
+    watch_manager = pyinotify.WatchManager()
+    notifier = pyinotify.Notifier(watch_manager, handler)
     for input_file in input_files:
-        wm.add_watch(input_file, pyinotify.IN_MODIFY)
+        watch_manager.add_watch(input_file, pyinotify.IN_MODIFY)
     notifier.loop()
 
 
 def main():
+    """
+    Main entry point.
+    Handle command line arguments and start the converter
+    """
     # Handle arguments
     parser = argparse.ArgumentParser(
         description='RDF to HTML converter. Converts one or more RDF files '
@@ -79,6 +89,9 @@ def main():
 
 
 def setup_logging(verbose, log_file):
+    """
+    Setup logging
+    """
 
     if verbose:
         log_level = logging.DEBUG
@@ -91,7 +104,8 @@ def setup_logging(verbose, log_file):
         stream = sys.stdout
 
     logging.basicConfig(stream=stream, level=log_level,
-                        format='%(asctime)s %(levelname)s %(module)s %(message)s')
+                        format='%(asctime)s %(levelname)s '
+                               '%(module)s %(message)s')
 
 
 if __name__ == '__main__':

@@ -81,11 +81,15 @@ class PredicateResolver(object):
 
         headers = {'Accept': 'application/rdf+xml'}
 
+        # Some URLs we've encountered do not provide xml versions of the rdf
         if url in FORMATS:
-            format = FORMATS[url]
+            rdf_format = FORMATS[url]
         else:
-            format = 'xml'
+            rdf_format = 'xml'
 
+        # Some URLs also do not follow the standard way of requesting a
+        # the resource on a different format. They do however provide
+        # the resource but at a differnt URL.
         if url in URL_REMAP:
             url = URL_REMAP[url]
 
@@ -103,7 +107,7 @@ class PredicateResolver(object):
 
         graph = rdflib.Graph()
         try:
-            graph.load(file_obj, format=format)
+            graph.load(file_obj, format=rdf_format)
         except Exception as err:  # pylint: disable=W0703
             # We want to catch all exceptions here
             logging.warning('Unable to parse file: %s. %s', url, err.message)

@@ -12,6 +12,7 @@ setup(
     name='rdf-to-html',
     version='1.0',
     description='RDF to HTML converter',
+    license='EUPL v1.1',
     long_description=long_desc,
 
     # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers

@@ -18,6 +18,7 @@ preferences.
 ## Setup
 * Create a virtual environment and activate it `virtualenv venv; . venv/bin/activate`
 * Run `python setup.py install` you will now have an executable named `rdf-to-html` in your path
+* Or install it via PyPi `pip install rdf-to-html`
 
 ## Run
 

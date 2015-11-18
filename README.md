@@ -59,3 +59,8 @@ a development web server is included at `devel/webserver.py`.
 Just run `python webserver.py` in the folder where you have your
 generated HTML-files and you can view them in your browser `localhost:8080/YOUR_FILE`.
 
+## Acknowledgements
+
+This application was developed by [Dohi Agency](http://dohi.se/agency) in cooperation with
+[Umeå Kommun](http://umea.se) in a project financed by
+[Internetfonden](https://www.iis.se/vad-vi-gor/internetfonden/).

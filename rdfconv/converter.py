@@ -51,7 +51,9 @@ class RDFtoHTMLConverter(object):
     Class representing a RDF to HTML converter
     """
 
-    def __init__(self, languages='all'):
+    def __init__(self, languages=None):
+        if not languages:
+            languages = ['all']
 
         # References to the underlying graph
         self._graph = None

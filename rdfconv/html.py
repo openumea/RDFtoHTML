@@ -45,7 +45,10 @@ class HtmlConverter(object):
                 TEMPLATE_LOADERS=("django.template.loaders.filesystem.Loader",),
                 TEMPLATE_DEBUG=True)
 
-    def output_html(self, path, language):
+        self.skip_internal_links = False
+        self.skip_literal_links = False
+
+    def build_node_dict(self, language):
         """
         Output each node to a separate file per language
         """
@@ -59,11 +62,10 @@ class HtmlConverter(object):
             if obj not in objects:
                 objects.append(obj)
 
-        main_template = get_template('main.html')
-
         nodes = []
         for obj in objects:
-            node_dict = {'node_id': obj.fragment}
+            node_dict = {'node_id': obj.fragment,
+                         'rdf_about': obj.id}
             summary = self._format_summary(obj, language)
             attributes = self._format_node(obj, language)
 
@@ -71,12 +73,18 @@ class HtmlConverter(object):
             node_dict.update({'attributes': attributes})
 
             nodes.append(node_dict)
+        return nodes
+
+    def output_html(self, path, language):
+        nodes = self.build_node_dict(language)
 
         # TODO: We might want to add the timezone here
         date = datetime.now().strftime('%Y-%m-%d %H:%M')
 
         context = Context({'nodes': nodes,
                            'date': date})
+
+        main_template = get_template('main.html')
         out = main_template.render(context)
 
         with codecs.open(path, 'w', 'utf-8') as output_file:
@@ -120,12 +128,13 @@ class HtmlConverter(object):
 
         attributes = []
         # Add the RDF id att the top
-        pred_link, pred_title = self._format_uriref(RDF_ABOUT, language)
+        pred_link, pred_title = self._format_uriref(RDF_ABOUT, language, skip_local=self.skip_internal_links)
+        obj_link, obj_title = self._format_uriref(rdf_obj.id, language, skip_local=True)
         attributes.append({
             'pred_link': pred_link,
-            'pred_title': "About",
-            'objs': [self._format_uriref(rdf_obj.id, language,
-                                         skip_local=True)],
+            'pred_title': 'About',
+            'objs': [{'title': obj_title,
+                     'link': obj_link}],
         })
 
         for pred in sorted(include):
@@ -135,7 +144,7 @@ class HtmlConverter(object):
                 # Skip the desired attributes if they are not present
                 continue
 
-            pred_link, pred_title = self._format_uriref(pred, language)
+            pred_link, pred_title = self._format_uriref(pred, language, skip_local=self.skip_literal_links)
             # Try to resolve the predicate to a more human readable format
             label = self._pred_res.resolve(pred_link, language)
             if label:
@@ -143,23 +152,22 @@ class HtmlConverter(object):
 
             objs = []
             if obj_list and isinstance(obj_list[0], Literal):
-                literals = format_literal(obj_list, language)
-                objs.append((u' '.join(literals), None))
+                literals = format_literal(obj_list, language, self.skip_literal_links)
+                objs.append({'title': u' '.join(literals)})
             else:
                 # Get the other objects and sort them based on their title
                 new_list = []
                 for obj in obj_list:
                     if isinstance(obj, URIRef):
-                        new_list.append(self._format_uriref(obj, language))
+                        new_list.append(self._format_uriref(obj, language, self.skip_internal_links))
                     elif isinstance(obj, BNode):
-                        new_list.append(self._format_bnode(obj, language))
+                        new_list.append(self._format_bnode(obj, language, self.skip_internal_links))
 
                 new_list = sorted(new_list, key=lambda t: t[1])
 
-                for link, value in new_list:
-                    obj_link = link
-                    obj_title = value
-                    objs.append((obj_link, obj_title))
+                for link, title in new_list:
+                    objs.append({'link': link,
+                                 'title': title})
 
             attributes.append({
                 'pred_link': pred_link,
@@ -177,8 +185,8 @@ class HtmlConverter(object):
         """
         # Does it point to a local asset?
         local_ref = unicode(uri_ref)
-        if not skip_local and local_ref in self.objects:
-            return self._format_bnode(uri_ref, language)
+        if local_ref in self.objects:
+            return self._format_bnode(uri_ref, language, skip_local)
 
         # It seems that some URIRefs get normalized with a '<' and a '>'
         # at the start/end of the string.
@@ -194,18 +202,22 @@ class HtmlConverter(object):
 
         return uri_ref, norm
 
-    def _format_bnode(self, bnode, language):
+    def _format_bnode(self, bnode, language, skip_local=False):
         """
         Return the HTML representation of a BNonde
         """
         # Check if we can get a title for the bnode
         rdf_id = unicode(bnode)
+
         link = self._get_fragment_link(rdf_id)
         if link:
             title = self.objects[rdf_id].get_title(language)
-            return link, title
+            if not skip_local:
+                return link, title
+            else:
+                return rdf_id, title
 
-        return (None, None)
+        return None, None
 
     def _get_fragment_link(self, rdf_id):
         """
@@ -226,7 +238,7 @@ LINK_REGEX = re.compile(r'(http://[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrs
 TO_WHITESPACE = re.compile(r'[_-]')
 
 
-def format_literal(literals, language):
+def format_literal(literals, language, skip_link=False):
     """
     Return the HTML representation of one or more Literals.
     First try to get the specified language and if it does not exist, get
@@ -240,7 +252,10 @@ def format_literal(literals, language):
         return ''
 
     for literal in literals:
-        value = _add_html_links(literal.value)
+        if not skip_link:
+            value = _add_html_links(literal.value)
+        else:
+            value = literal.value
         if literal.language == language:
             same_lang.append(value)
         elif not literal.language:

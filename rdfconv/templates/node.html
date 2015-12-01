@@ -14,10 +14,10 @@
                     <td><a href="{{ attr.pred_link }}">{{ attr.pred_title }}</a></td>
                     <td>
                     {% for obj in attr.objs %}
-                        {% if obj.1 %}
-                            <a href="{{ obj.0 }}">{{ obj.1 }}</a><br />
+                        {% if obj.link %}
+                            <a href="{{ obj.link }}">{{ obj.title }}</a><br />
                         {% else %}
-                            {{ obj.0 | safe }}
+                            {{ obj.title | safe }}
                         {% endif %}
                     {% endfor %}
                     </td>

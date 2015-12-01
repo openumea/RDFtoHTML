@@ -71,6 +71,16 @@ class RDFtoHTMLConverter(object):
         # The currently loaded file
         self.input_file = None
 
+        self._skip_links = False
+
+    @property
+    def skip_links(self):
+        return self._skip_links
+
+    @skip_links.setter
+    def skip_links(self, value):
+        self._skip_links = value
+
     def load_file(self, filename):
         """
         Read RDF data from file
@@ -130,6 +140,9 @@ class RDFtoHTMLConverter(object):
         shutil.copy(os.path.join(base_dir, 'includes/rdfconv.js'), folder)
 
         html_conv = HtmlConverter(self.objects, self._ns_mgr)
+        if self.skip_links:
+            html_conv.skip_literal_links = True
+            html_conv.skip_internal_links = True
 
         # Assume english if no language was encountered
         if not self.languages:
@@ -139,6 +152,13 @@ class RDFtoHTMLConverter(object):
             filename = get_file(filename, language)
             path = os.path.join(folder, filename)
             html_conv.output_html(path, language)
+
+    def get_nodes(self, language):
+        html_conv = HtmlConverter(self.objects, self._ns_mgr)
+        if self.skip_links:
+            html_conv.skip_literal_links = True
+            html_conv.skip_internal_links = True
+        return html_conv.build_node_dict(language)
 
     def _validate_languages(self):
         """

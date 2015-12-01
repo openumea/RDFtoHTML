@@ -128,6 +128,10 @@ class RDFtoHTMLConverter(object):
         shutil.copy(os.path.join(base_dir, 'includes/rdfconv.js'), folder)
 
         html_conv = HtmlConverter(self.objects, self._ns_mgr)
+
+        # Assume english if no language was encountered
+        if not self.languages:
+            self.languages.add('en')
         for language in self.languages:
             filename = os.path.splitext(self.input_file)[0]
             filename = get_file(filename, language)

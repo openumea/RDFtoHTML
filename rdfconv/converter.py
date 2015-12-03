@@ -75,10 +75,21 @@ class RDFtoHTMLConverter(object):
 
     @property
     def skip_links(self):
+        """
+        Should the converter skip converting stuff that looks like links
+        to actual HTML links?
+        :return:
+        """
         return self._skip_links
 
     @skip_links.setter
     def skip_links(self, value):
+        """
+        Tells the converter where to skip converting what looks like
+        links to actual HTML links
+        :param value:
+        :return:
+        """
         self._skip_links = value
 
     def load_file(self, filename):
@@ -154,6 +165,16 @@ class RDFtoHTMLConverter(object):
             html_conv.output_html(path, language)
 
     def get_nodes(self, language):
+        """
+        Get the nodes parsed from the RDF file
+
+        This is used before running the actual HTML conversion
+        and can be used by other software that wants to render
+        their own version of the data.
+        :param language:
+        :return: a list of nested dictionaries with information
+                 about each node in the RDF file
+        """
         html_conv = HtmlConverter(self.objects, self._ns_mgr)
         if self.skip_links:
             html_conv.skip_literal_links = True

@@ -50,7 +50,11 @@ class HtmlConverter(object):
 
     def build_node_dict(self, language):
         """
-        Output each node to a separate file per language
+        Build list of nested dictionaries to use as an intermediate
+        format before rendering the HTML.
+
+        :param language: language to convert to
+        :returns: dictionary with nodes
         """
         objects = []
         for rdf_type in OBJ_ORDER:
@@ -76,6 +80,12 @@ class HtmlConverter(object):
         return nodes
 
     def output_html(self, path, language):
+        """
+        Output each node to a separate file per language
+        :param path:
+        :param language:
+        :return:
+        """
         nodes = self.build_node_dict(language)
 
         # TODO: We might want to add the timezone here

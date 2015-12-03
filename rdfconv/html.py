@@ -144,7 +144,7 @@ class HtmlConverter(object):
             'pred_link': pred_link,
             'pred_title': 'About',
             'objs': [{'title': obj_title,
-                     'link': obj_link}],
+                      'link': obj_link}],
         })
 
         for pred in sorted(include):

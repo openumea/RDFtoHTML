@@ -30,10 +30,12 @@ setup(
         'django>=1.8.6',
         'requests>=2.8.1',
         'pyinotify>=0.9.6',
+        'ckanapi',
     ],
     entry_points={
         'console_scripts': [
             'rdf-to-html=rdfconv.main:main',
+            'ckan-uploader=ckan_uploader.uploader:main'
         ],
     },
 )

@@ -91,6 +91,9 @@ class CKANUploader(object):
         loader = RDFLoader(rdf_path)
         for rdf_about, ckan_name in self.mapping.iteritems():
             node = loader.convert_node(rdf_about)
+            # Node wasn't found in the RDF file so we skip it
+            if not node:
+                continue
             extras = self._convert_to_extras(node['attributes'])
             self._update_dataset(ckan_name, rdf_about, extras)
 

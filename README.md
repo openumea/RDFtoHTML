@@ -77,7 +77,7 @@ generated HTML-files and you can view them in your browser `localhost:8080/YOUR_
 
 ## CKAN extension
 This repository includes code to upload data from an RDF file to CKAN in order to show metadata about datasets. The upload script will utilize the extras field in CKAN to store this data. To 
-display the data display these nicely you should install [this](https://github.com/openumea/ckanext-rdf-to-html) extension.
+display the data nicely you should install [this](https://github.com/openumea/ckanext-rdf-to-html) extension.
 
 For more information on how to use this extension please refer to the readme [here](https://github.com/openumea/ckanext-rdf-to-html)
 

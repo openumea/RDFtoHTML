@@ -79,7 +79,8 @@ generated HTML-files and you can view them in your browser `localhost:8080/YOUR_
 This repository includes code to upload data from an RDF file to CKAN in order to show metadata about datasets. The upload script will utilize the extras field in CKAN to store this data. To 
 display the data nicely you should install [this](https://github.com/openumea/ckanext-rdf-to-html) extension.
 
-For more information on how to use this extension please refer to the readme [here](https://github.com/openumea/ckanext-rdf-to-html)
+To upload data to CKAN run the following command `ckan-uploader CKAN_URL API_KEY RDF_FILE`.
+The `RDF_FILE` can be either a local file or a file accessible by HTTP. For the script to work you must use an `API_KEY` for a user with edit right for all the datasets you want to upload data to.
 
 ## Acknowledgements
 

@@ -5,7 +5,7 @@ third party sources.
 import logging
 import requests
 import rdflib
-import StringIO
+from io import StringIO
 
 LABEL_CANDIDATES = ['http://www.w3.org/2000/01/rdf-schema#label']
 
@@ -95,32 +95,33 @@ class PredicateResolver(object):
 
         logging.info('Downloading %s', url)
         try:
+            return
             resp = requests.get(url, headers=headers)
         except Exception as err:  # pylint: disable=W0703
             # We want to catch all exceptions here
-            logging.warning('Unable to download %s. %s', url, err.message)
+            logging.warning('Unable to download %s. %s', url, err)
             return
 
-        file_obj = StringIO.StringIO()
-        file_obj.write(resp.text.encode('utf-8'))
+        file_obj = StringIO()
+        file_obj.write(resp.text)
         file_obj.seek(0)
 
         graph = rdflib.Graph()
         try:
-            graph.load(file_obj, format=rdf_format)
+            graph.parse(file_obj, format=rdf_format)
         except Exception as err:  # pylint: disable=W0703
             # We want to catch all exceptions here
-            logging.warning('Unable to parse file: %s. %s', url, err.message)
+            logging.warning('Unable to parse file: %s. %s', url, err)
         for subj, pred, obj in graph:
 
-            if isinstance(obj, rdflib.Literal) and unicode(pred) in LABEL_CANDIDATES:
-                subj = unicode(subj)
+            if isinstance(obj, rdflib.Literal) and str(pred) in LABEL_CANDIDATES:
+                subj = str(subj)
                 if subj not in self._resolved:
                     self._resolved[subj] = {}
                 if obj.language:
                     language = obj.language
                 else:
                     language = 'en'
-                self._resolved[subj][language] = unicode(obj.value).title()
+                self._resolved[subj][language] = str(obj.value).title()
 
         self._parsed.append(url)

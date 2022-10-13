@@ -7,12 +7,12 @@ from rdfconv.utils import get_attribute
 from rdfconv.html import format_literal
 
 # Namespaces
-TYPE = u'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
-TITLE = u'http://purl.org/dc/terms/title'
-FOAF_NAME = u'http://xmlns.com/foaf/0.1/name'
-LABEL = u'http://www.w3.org/2000/01/rdf-schema#label'
-VCARD_NAME = u'http://www.w3.org/2006/vcard/ns#fn'
-DESC = u'http://purl.org/dc/terms/description'
+TYPE = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
+TITLE = 'http://purl.org/dc/terms/title'
+FOAF_NAME = 'http://xmlns.com/foaf/0.1/name'
+LABEL = 'http://www.w3.org/2000/01/rdf-schema#label'
+VCARD_NAME = 'http://www.w3.org/2006/vcard/ns#fn'
+DESC = 'http://purl.org/dc/terms/description'
 
 # Attributes with these namespaces are candidates for the summary
 # title/description
@@ -35,7 +35,7 @@ class RdfObject(object):
         self.id = id
 
         # Fragment id
-        self.fragment = hashlib.md5(id).hexdigest()
+        self.fragment = hashlib.md5(id.encode()).hexdigest()
 
         # List of potential titles and descriptions
         self.title = None

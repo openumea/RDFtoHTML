@@ -9,6 +9,8 @@
     Updated {{ date }}
 </div>
 {% for node in nodes %}
-    {% include 'node.html' with node=node %}
+    {% with node=node %}
+        {% include "node.html" %}
+    {% endwith %}
 {% endfor %}
 </html>

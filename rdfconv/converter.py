@@ -100,7 +100,7 @@ class RDFtoHTMLConverter(object):
 
         # Load graph from file
         self._graph = rdflib.Graph()
-        self._graph.load(filename, format='application/rdf+xml')
+        self._graph.parse(filename, format='text/turtle')
 
         # Easy access to namespace manager
         self._ns_mgr = self._graph.namespace_manager
@@ -123,7 +123,7 @@ class RDFtoHTMLConverter(object):
 
         # Generate objects
         objects = []
-        for key, value in rdf_dict.iteritems():
+        for key, value in rdf_dict.items():
             obj = RdfObject(key, value, self._ns_mgr)
             objects.append(obj)
 

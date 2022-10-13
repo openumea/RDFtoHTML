@@ -3,9 +3,9 @@ Contains code related to outputing HTML
 """
 import os
 import codecs
-import urllib2
 import re
 from datetime import datetime
+from urllib.parse import unquote
 
 from rdflib.term import URIRef, BNode, Literal
 from django.template import Context
@@ -15,11 +15,11 @@ from django.conf import settings
 from rdfconv.predicate import PredicateResolver
 
 
-RDF_ABOUT = URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#about')
+RDF_ABOUT = URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#about')
 
-CATALOG = URIRef(u'http://www.w3.org/ns/dcat#Catalog')
-DATASET = URIRef(u'http://www.w3.org/ns/dcat#Dataset')
-DISTRIBUTION = URIRef(u'http://www.w3.org/ns/dcat#Distribution')
+CATALOG = URIRef('http://www.w3.org/ns/dcat#Catalog')
+DATASET = URIRef('http://www.w3.org/ns/dcat#Dataset')
+DISTRIBUTION = URIRef('http://www.w3.org/ns/dcat#Distribution')
 
 OBJ_ORDER = [CATALOG, DATASET, DISTRIBUTION]
 
@@ -43,6 +43,7 @@ class HtmlConverter(object):
             settings.configure(
                 TEMPLATE_DIRS=(os.path.join(base_dir, 'templates'),),
                 TEMPLATE_LOADERS=("django.template.loaders.filesystem.Loader",),
+                TEMPLATE_BACKEND='django.template.backends.jinja2.Jinja2',
                 TEMPLATE_DEBUG=True)
 
         self.skip_internal_links = False
@@ -58,11 +59,11 @@ class HtmlConverter(object):
         """
         objects = []
         for rdf_type in OBJ_ORDER:
-            for obj in self.objects.values():
+            for obj in list(self.objects.values()):
                 if obj.type == rdf_type:
                     objects.append(obj)
 
-        for obj in self.objects.values():
+        for obj in list(self.objects.values()):
             if obj not in objects:
                 objects.append(obj)
 
@@ -94,8 +95,14 @@ class HtmlConverter(object):
         context = Context({'nodes': nodes,
                            'date': date})
 
-        main_template = get_template('main.html')
-        out = main_template.render(context)
+        import pdb; pdb.set_trace()
+        from jinja2 import Environment, PackageLoader, select_autoescape
+        env = Environment(
+            loader=PackageLoader("rdfconv", "templates"),
+            autoescape=select_autoescape(['html', 'xml'])
+        )
+        main_template = env.get_template('main.html')
+        out = main_template.render(nodes=nodes, date=date)
 
         with codecs.open(path, 'w', 'utf-8') as output_file:
             output_file.write(out)
@@ -163,7 +170,7 @@ class HtmlConverter(object):
             objs = []
             if obj_list and isinstance(obj_list[0], Literal):
                 literals = format_literal(obj_list, language, self.skip_literal_links)
-                objs.append({'title': u' '.join(literals)})
+                objs.append({'title': ' '.join(literals)})
             else:
                 # Get the other objects and sort them based on their title
                 new_list = []
@@ -194,7 +201,7 @@ class HtmlConverter(object):
         Return the HTML representation of a URIRef
         """
         # Does it point to a local asset?
-        local_ref = unicode(uri_ref)
+        local_ref = str(uri_ref)
         if local_ref in self.objects:
             return self._format_bnode(uri_ref, language, skip_local)
 
@@ -217,7 +224,7 @@ class HtmlConverter(object):
         Return the HTML representation of a BNonde
         """
         # Check if we can get a title for the bnode
-        rdf_id = unicode(bnode)
+        rdf_id = str(bnode)
 
         link = self._get_fragment_link(rdf_id)
         if link:
@@ -235,7 +242,7 @@ class HtmlConverter(object):
         node could not be found in the current context
         """
         try:
-            return '#' + self.objects[unicode(rdf_id)].fragment
+            return '#' + self.objects[str(rdf_id)].fragment
 
         except KeyError:
             return None
@@ -308,7 +315,7 @@ def _add_html_links(string):
             display_name = splits[1]
 
         # Remove the URL encoding
-        display_name = urllib2.unquote(display_name)
+        display_name = unquote(display_name)
         # We want the string in Unicode, not UTF-8, beacuse django seems to
         # like it this way. Encoding the string as latin-1 and decoding it
         # again seems to produce a pure unicode string.
@@ -327,7 +334,7 @@ def _make_link(url, display_name):
     """
     Make a HTML link from an url and a display name
     """
-    return u'<a href=%s target="_blank">%s</a>' % (url, display_name)
+    return '<a href=%s target="_blank">%s</a>' % (url, display_name)
 
 
 def _get_preceding_character(string, sub_string):

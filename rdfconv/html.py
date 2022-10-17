@@ -25,7 +25,8 @@ class HtmlConverter(object):
     Class that converts a dictionary of RdfObjects into HTML
     """
 
-    def __init__(self, rdf_objects, ns_mgr):
+    def __init__(self, rdf_objects, ns_mgr, local_ns: list = None):
+        self.local_ns = local_ns or []
         self.objects = rdf_objects
         self._ns_mgr = ns_mgr
 
@@ -77,8 +78,6 @@ class HtmlConverter(object):
         # TODO: We might want to add the timezone here
         date = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-        # import pdb; pdb.set_trace()
-
         env = Environment(
             loader=PackageLoader("rdfconv", "templates"),
             autoescape=select_autoescape(["html", "xml"]),
@@ -115,6 +114,12 @@ class HtmlConverter(object):
 
         return out
 
+    def _format_as_local_ns(self, uri):
+        for ns in self.local_ns:
+            if uri.startswith(ns):
+                return f"#{uri}"
+        return uri
+
     def _format_node(self, rdf_obj, language, include=None):
         """
         Returns a single node as a table with all:
@@ -135,7 +140,9 @@ class HtmlConverter(object):
             {
                 "pred_link": pred_link,
                 "pred_title": "About",
-                "objs": [{"title": obj_title, "link": obj_link}],
+                "objs": [
+                    {"title": obj_title, "link": self._format_as_local_ns(obj_link)}
+                ],
             }
         )
 
@@ -155,13 +162,20 @@ class HtmlConverter(object):
                 pred_title = label
 
             objs = []
-            if obj_list and isinstance(obj_list[0], Literal):
-                literals = format_literal(obj_list, language, self.skip_literal_links)
+            if obj_list:
+                # Add literals.
+                literal_objects = [_ for _ in obj_list if isinstance(_, Literal)]
+                literals = format_literal(
+                    literal_objects, language, self.skip_literal_links
+                )
                 objs.append({"title": " ".join(literals)})
-            else:
+
                 # Get the other objects and sort them based on their title
                 new_list = []
                 for obj in obj_list:
+                    if obj in literal_objects:
+                        continue
+
                     if isinstance(obj, URIRef):
                         new_list.append(
                             self._format_uriref(obj, language, self.skip_internal_links)
@@ -174,7 +188,9 @@ class HtmlConverter(object):
                 new_list = sorted(new_list, key=lambda t: t[1])
 
                 for link, title in new_list:
-                    objs.append({"link": link, "title": title})
+                    objs.append(
+                        {"link": self._format_as_local_ns(link), "title": title}
+                    )
 
             attributes.append(
                 {
@@ -243,7 +259,7 @@ class HtmlConverter(object):
 
 # Characters allowed in an URL according to RDF 3986
 LINK_REGEX = re.compile(
-    r"(http://[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\-._~:/?#\[\]@!$&\'()*+,;=%%]+)"
+    r"(https?://[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\-._~:/?#\[\]@!$&\'()*+,;=%%]+)"
 )
 TO_WHITESPACE = re.compile(r"[_-]")
 
@@ -262,10 +278,13 @@ def format_literal(literals, language, skip_link=False):
         return ""
 
     for literal in literals:
+
+        value = literal.value
+        if not isinstance(value, str):
+            value = str(value)
         if not skip_link:
-            value = _add_html_links(literal.value)
-        else:
-            value = literal.value
+            value = _add_html_links(value)
+
         if literal.language == language:
             same_lang.append(value)
         elif not literal.language:
@@ -281,7 +300,7 @@ def format_literal(literals, language, skip_link=False):
         return sorted(other_lang)
 
 
-def _add_html_links(string):
+def _add_html_links(string: str):
     """
     Find anything that looks like a hyperlink and convert it to an actual
     HTML link.
@@ -312,6 +331,7 @@ def _add_html_links(string):
         # We want the string in Unicode, not UTF-8, beacuse django seems to
         # like it this way. Encoding the string as latin-1 and decoding it
         # again seems to produce a pure unicode string.
+        # FIXME: we are in python3 now... drop this?
         display_name = display_name.encode("latin-1").decode("utf-8")
 
         # We also want to remove underscores and such

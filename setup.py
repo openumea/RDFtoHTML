@@ -27,7 +27,6 @@ setup(
     include_package_data=True,
     install_requires=[
         "rdflib>=6.2.0",
-        "django>=1.8.6",
         "jinja2>=2.8",
         "requests>=2.8.1",
         "pyinotify>=0.9.6",

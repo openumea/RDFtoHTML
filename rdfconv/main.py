@@ -26,15 +26,15 @@ class EventHandler(pyinotify.ProcessEvent):
         run(event.path, self.output_folder, self.languages)
 
 
-def run(input_file, output_folder, languages="all"):
+def run(input_file, output_folder, languages="all", index_html=False, local_ns=set()):
     """
     Run the RDF converter
     """
     try:
         logging.info("Converting %s", input_file)
-        rdf_conv = RDFtoHTMLConverter(languages)
+        rdf_conv = RDFtoHTMLConverter(languages, config={"local_ns": local_ns})
         rdf_conv.load_file(input_file)
-        rdf_conv.output_html(output_folder)
+        rdf_conv.output_html(output_folder, index_html=index_html)
         logging.info("Finished converting %s", input_file)
     except LanguageError as err:
         logging.error("Skipped file %s: %s", input_file, err)
@@ -69,6 +69,21 @@ def main():
         "output", metavar="OUTPUT_DIR", type=str, help="Output directory"
     )
     parser.add_argument(
+        "--index", dest="index_html", action="store_true", help="Store as index.html"
+    )
+    parser.add_argument(
+        "--local-ns",
+        metavar="LOCAL_NS",
+        default=[],
+        type=str,
+        nargs="+",
+        help=(
+            "Sequence of namespace to be considered local "
+            "for rendering and referenced as fragments"
+        ),
+    )
+
+    parser.add_argument(
         "--languages",
         type=str,
         default="all",
@@ -102,9 +117,16 @@ def main():
 
     if args.watch:
         watch(args.dcat_files, args.output, langs)
-    else:
-        for dcat_file in args.dcat_files:
-            run(dcat_file, args.output, langs)
+        exit(0)
+
+    local_ns = args.local_ns
+    if not isinstance(local_ns, list):
+        local_ns = [local_ns]
+
+    for dcat_file in args.dcat_files:
+        run(
+            dcat_file, args.output, langs, index_html=args.index_html, local_ns=local_ns
+        )
 
 
 def setup_logging(verbose, log_file):

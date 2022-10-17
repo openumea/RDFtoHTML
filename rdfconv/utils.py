@@ -13,10 +13,3 @@ def get_attribute(node, candidates):
         if candidate in node:
             return node[candidate]
     return None
-
-
-def get_file(name, language):
-    """
-    Format a filename based on a name and a language
-    """
-    return "%s.%s.html" % (name, language)

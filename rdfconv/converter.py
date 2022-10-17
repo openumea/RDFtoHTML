@@ -1,17 +1,17 @@
 """
 This module contains code for converting RDF-files into HTML
 """
-import os
 import logging
+import os
 import shutil
 from collections import OrderedDict
 
 import rdflib
 from rdflib.term import Literal
 
-from rdfconv.utils import get_file
 from rdfconv.html import HtmlConverter
 from rdfconv.objects import RdfObject
+from rdfconv.utils import get_file
 
 if not logging:
     # rdflib requires a logger to be setup
@@ -22,7 +22,6 @@ class Error(Exception):
     """
     Base class for exceptions in this module
     """
-    pass
 
 
 class LanguageError(Error):
@@ -30,15 +29,16 @@ class LanguageError(Error):
     Raised when the specified languages differ from the actual languages
     encountered in the RDF file.
     """
+
     def __init__(self, filename, specified, actual):
         super(LanguageError, self).__init__()
-        error = 'Languages encountered in RDF file differ from specified ' \
-                'languages %s.\n\t' +\
-                'Specified: %s\n\t' +\
-                'Actual:    %s'
+        error = (
+            "Languages encountered in RDF file differ from specified "
+            "languages %s.\n\t" + "Specified: %s\n\t" + "Actual:    %s"
+        )
 
-        specified = ','.join(sorted(specified))
-        actual = ','.join(sorted(actual))
+        specified = ",".join(sorted(specified))
+        actual = ",".join(sorted(actual))
 
         self.msg = error % (filename, specified, actual)
 
@@ -53,7 +53,7 @@ class RDFtoHTMLConverter(object):
 
     def __init__(self, languages=None):
         if not languages:
-            languages = ['all']
+            languages = ["all"]
 
         # References to the underlying graph
         self._graph = None
@@ -100,7 +100,7 @@ class RDFtoHTMLConverter(object):
 
         # Load graph from file
         self._graph = rdflib.Graph()
-        self._graph.parse(filename, format='text/turtle')
+        self._graph.parse(filename, format="text/turtle")
 
         # Easy access to namespace manager
         self._ns_mgr = self._graph.namespace_manager
@@ -129,7 +129,7 @@ class RDFtoHTMLConverter(object):
 
         # Sort them by type -> title
         self.objects = OrderedDict()
-        for obj in sorted(objects, key=lambda x: x.get_sort_tuple('en')):
+        for obj in sorted(objects, key=lambda x: x.get_sort_tuple("en")):
             self.objects[obj.id] = obj
 
         self._validate_languages()
@@ -141,14 +141,13 @@ class RDFtoHTMLConverter(object):
         if not os.path.exists(folder):
             os.mkdir(folder)
         elif not os.path.isdir(folder):
-            logging.error('Could not write output. %s is not a directory.',
-                          folder)
+            logging.error("Could not write output. %s is not a directory.", folder)
             exit(1)
 
         # Move script and style files
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        shutil.copy(os.path.join(base_dir, 'includes/style.css'), folder)
-        shutil.copy(os.path.join(base_dir, 'includes/rdfconv.js'), folder)
+        shutil.copy(os.path.join(base_dir, "includes/style.css"), folder)
+        shutil.copy(os.path.join(base_dir, "includes/rdfconv.js"), folder)
 
         html_conv = HtmlConverter(self.objects, self._ns_mgr)
         if self.skip_links:
@@ -157,7 +156,7 @@ class RDFtoHTMLConverter(object):
 
         # Assume english if no language was encountered
         if not self.languages:
-            self.languages.add('en')
+            self.languages.add("en")
         for language in self.languages:
             filename = os.path.splitext(self.input_file)[0]
             filename = get_file(filename, language)
@@ -186,10 +185,10 @@ class RDFtoHTMLConverter(object):
         Make sure the languages specified by the user are the same as those
         encountered in the RDf file.
         """
-        if 'all' in self.specified_languages:
+        if "all" in self.specified_languages:
             return
 
         if self.languages != self.specified_languages:
-            raise LanguageError(self.input_file,
-                                self.specified_languages,
-                                self.languages)
+            raise LanguageError(
+                self.input_file, self.specified_languages, self.languages
+            )

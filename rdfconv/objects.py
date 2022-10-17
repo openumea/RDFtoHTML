@@ -2,17 +2,17 @@
 Class containing code related to RDF objects
 """
 
-import hashlib
-from rdfconv.utils import get_attribute
+
 from rdfconv.html import format_literal
+from rdfconv.utils import get_attribute
 
 # Namespaces
-TYPE = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'
-TITLE = 'http://purl.org/dc/terms/title'
-FOAF_NAME = 'http://xmlns.com/foaf/0.1/name'
-LABEL = 'http://www.w3.org/2000/01/rdf-schema#label'
-VCARD_NAME = 'http://www.w3.org/2006/vcard/ns#fn'
-DESC = 'http://purl.org/dc/terms/description'
+TYPE = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+TITLE = "http://purl.org/dc/terms/title"
+FOAF_NAME = "http://xmlns.com/foaf/0.1/name"
+LABEL = "http://www.w3.org/2000/01/rdf-schema#label"
+VCARD_NAME = "http://www.w3.org/2006/vcard/ns#fn"
+DESC = "http://purl.org/dc/terms/description"
 
 # Attributes with these namespaces are candidates for the summary
 # title/description
@@ -35,7 +35,8 @@ class RdfObject(object):
         self.id = id
 
         # Fragment id
-        self.fragment = hashlib.md5(id.encode()).hexdigest()
+        *_, self.fragment = str(id).split("#", 2)
+        # hashlib.md5(id.encode()).hexdigest()
 
         # List of potential titles and descriptions
         self.title = None
@@ -79,22 +80,22 @@ class RdfObject(object):
         candidates = format_literal(self.description, language)
         if candidates:
             return candidates[0]
-        return ''
+        return ""
 
     def get_canoical_type(self):
         """
         Gets the shortened type of the RDF object
         """
         if not self.type:
-            return ''
+            return ""
         norm = self._ns_mgr.normalizeUri(self.type).strip()
 
-        if norm[0] == '<':
+        if norm[0] == "<":
             norm = norm[1:]
-        if norm[-1] == '>':
-            norm = norm[:len(norm)-1]
-        if norm[-1] == '/':
-            norm = norm[:len(norm)-1]
+        if norm[-1] == ">":
+            norm = norm[: len(norm) - 1]
+        if norm[-1] == "/":
+            norm = norm[: len(norm) - 1]
         return norm
 
     def get_sort_tuple(self, language):

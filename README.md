@@ -76,7 +76,7 @@ Just run `python webserver.py` in the folder where you have your
 generated HTML-files and you can view them in your browser `localhost:8080/YOUR_FILE`.
 
 ## CKAN extension
-This repository includes code to upload data from an RDF file to CKAN in order to show metadata about datasets. The upload script will utilize the extras field in CKAN to store this data. To 
+This repository includes code to upload data from an RDF file to CKAN in order to show metadata about datasets. The upload script will utilize the extras field in CKAN to store this data. To
 display the data nicely you should install [this](https://github.com/openumea/ckanext-rdf-to-html) extension.
 
 To upload data to CKAN run the following command `ckan-uploader CKAN_URL API_KEY RDF_FILE`.

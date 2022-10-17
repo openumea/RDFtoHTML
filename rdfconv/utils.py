@@ -19,4 +19,4 @@ def get_file(name, language):
     """
     Format a filename based on a name and a language
     """
-    return '%s.%s.html' % (name, language)
+    return "%s.%s.html" % (name, language)

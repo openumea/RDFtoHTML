@@ -5,13 +5,13 @@ import logging
 import os
 import shutil
 from collections import OrderedDict
+from pathlib import Path
 
 import rdflib
 from rdflib.term import Literal
 
 from rdfconv.html import HtmlConverter
 from rdfconv.objects import RdfObject
-from rdfconv.utils import get_file
 
 if not logging:
     # rdflib requires a logger to be setup
@@ -134,7 +134,7 @@ class RDFtoHTMLConverter(object):
 
         self._validate_languages()
 
-    def output_html(self, folder):
+    def output_html(self, folder, index_html=False):
         """
         Output one file per language encountered in the rdf file
         """
@@ -146,20 +146,28 @@ class RDFtoHTMLConverter(object):
 
         # Move script and style files
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        shutil.copy(os.path.join(base_dir, "includes/style.css"), folder)
-        shutil.copy(os.path.join(base_dir, "includes/rdfconv.js"), folder)
+        for filename in ["style.css", "rdfconv.js"]:
+            dpath = Path(folder) / filename
+            if dpath.exists():
+                continue
+            shutil.copyfile(Path(base_dir) / filename, dpath)
 
         html_conv = HtmlConverter(self.objects, self._ns_mgr)
         if self.skip_links:
             html_conv.skip_literal_links = True
             html_conv.skip_internal_links = True
 
+        if index_html:
+            filename = "index.html"
+            path = os.path.join(folder, filename)
+            html_conv.output_html(path, "en")
+            return
+
         # Assume english if no language was encountered
         if not self.languages:
             self.languages.add("en")
         for language in self.languages:
-            filename = os.path.splitext(self.input_file)[0]
-            filename = get_file(filename, language)
+            filename = "%s.%s.html" % (os.path.splitext(self.input_file)[0], language)
             path = os.path.join(folder, filename)
             html_conv.output_html(path, language)
 

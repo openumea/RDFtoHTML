@@ -155,13 +155,18 @@ class HtmlConverter(object):
                 pred_title = label
 
             objs = []
-            if obj_list and isinstance(obj_list[0], Literal):
-                literals = format_literal(obj_list, language, self.skip_literal_links)
+            if obj_list:
+                # Add literals.
+                lits = [_ for _ in obj_list if isinstance(_, Literal)]
+                literals = format_literal(lits, language, self.skip_literal_links)
                 objs.append({"title": " ".join(literals)})
-            else:
+
                 # Get the other objects and sort them based on their title
                 new_list = []
                 for obj in obj_list:
+                    if obj in lits:
+                        continue
+
                     if isinstance(obj, URIRef):
                         new_list.append(
                             self._format_uriref(obj, language, self.skip_internal_links)
@@ -243,7 +248,7 @@ class HtmlConverter(object):
 
 # Characters allowed in an URL according to RDF 3986
 LINK_REGEX = re.compile(
-    r"(http://[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\-._~:/?#\[\]@!$&\'()*+,;=%%]+)"
+    r"(https?://[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\-._~:/?#\[\]@!$&\'()*+,;=%%]+)"
 )
 TO_WHITESPACE = re.compile(r"[_-]")
 
@@ -266,6 +271,7 @@ def format_literal(literals, language, skip_link=False):
             value = _add_html_links(literal.value)
         else:
             value = literal.value
+
         if literal.language == language:
             same_lang.append(value)
         elif not literal.language:
@@ -312,6 +318,7 @@ def _add_html_links(string):
         # We want the string in Unicode, not UTF-8, beacuse django seems to
         # like it this way. Encoding the string as latin-1 and decoding it
         # again seems to produce a pure unicode string.
+        # FIXME: we are in python3 now... drop this?
         display_name = display_name.encode("latin-1").decode("utf-8")
 
         # We also want to remove underscores and such

@@ -1,15 +1,15 @@
 """
 This module contains code for converting RDF-files into HTML
 """
-import os
 import logging
+import os
 import shutil
 from collections import OrderedDict
+from pathlib import Path
 
 import rdflib
 from rdflib.term import Literal
 
-from rdfconv.utils import get_file
 from rdfconv.html import HtmlConverter
 from rdfconv.objects import RdfObject
 
@@ -22,7 +22,6 @@ class Error(Exception):
     """
     Base class for exceptions in this module
     """
-    pass
 
 
 class LanguageError(Error):
@@ -30,15 +29,16 @@ class LanguageError(Error):
     Raised when the specified languages differ from the actual languages
     encountered in the RDF file.
     """
+
     def __init__(self, filename, specified, actual):
         super(LanguageError, self).__init__()
-        error = 'Languages encountered in RDF file differ from specified ' \
-                'languages %s.\n\t' +\
-                'Specified: %s\n\t' +\
-                'Actual:    %s'
+        error = (
+            "Languages encountered in RDF file differ from specified "
+            "languages %s.\n\t" + "Specified: %s\n\t" + "Actual:    %s"
+        )
 
-        specified = ','.join(sorted(specified))
-        actual = ','.join(sorted(actual))
+        specified = ",".join(sorted(specified))
+        actual = ",".join(sorted(actual))
 
         self.msg = error % (filename, specified, actual)
 
@@ -53,7 +53,7 @@ class RDFtoHTMLConverter(object):
 
     def __init__(self, languages=None):
         if not languages:
-            languages = ['all']
+            languages = ["all"]
 
         # References to the underlying graph
         self._graph = None
@@ -100,7 +100,7 @@ class RDFtoHTMLConverter(object):
 
         # Load graph from file
         self._graph = rdflib.Graph()
-        self._graph.load(filename, format='application/rdf+xml')
+        self._graph.parse(filename, format="text/turtle")
 
         # Easy access to namespace manager
         self._ns_mgr = self._graph.namespace_manager
@@ -123,44 +123,51 @@ class RDFtoHTMLConverter(object):
 
         # Generate objects
         objects = []
-        for key, value in rdf_dict.iteritems():
+        for key, value in rdf_dict.items():
             obj = RdfObject(key, value, self._ns_mgr)
             objects.append(obj)
 
         # Sort them by type -> title
         self.objects = OrderedDict()
-        for obj in sorted(objects, key=lambda x: x.get_sort_tuple('en')):
+        for obj in sorted(objects, key=lambda x: x.get_sort_tuple("en")):
             self.objects[obj.id] = obj
 
         self._validate_languages()
 
-    def output_html(self, folder):
+    def output_html(self, folder, index_html=False):
         """
         Output one file per language encountered in the rdf file
         """
         if not os.path.exists(folder):
             os.mkdir(folder)
         elif not os.path.isdir(folder):
-            logging.error('Could not write output. %s is not a directory.',
-                          folder)
+            logging.error("Could not write output. %s is not a directory.", folder)
             exit(1)
 
         # Move script and style files
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        shutil.copy(os.path.join(base_dir, 'includes/style.css'), folder)
-        shutil.copy(os.path.join(base_dir, 'includes/rdfconv.js'), folder)
+        for filename in ["style.css", "rdfconv.js"]:
+            dpath = Path(folder) / filename
+            if dpath.exists():
+                continue
+            shutil.copyfile(Path(base_dir) / filename, dpath)
 
         html_conv = HtmlConverter(self.objects, self._ns_mgr)
         if self.skip_links:
             html_conv.skip_literal_links = True
             html_conv.skip_internal_links = True
 
+        if index_html:
+            filename = "index.html"
+            path = os.path.join(folder, filename)
+            html_conv.output_html(path, "en")
+            return
+
         # Assume english if no language was encountered
         if not self.languages:
-            self.languages.add('en')
+            self.languages.add("en")
         for language in self.languages:
-            filename = os.path.splitext(self.input_file)[0]
-            filename = get_file(filename, language)
+            filename = "%s.%s.html" % (os.path.splitext(self.input_file)[0], language)
             path = os.path.join(folder, filename)
             html_conv.output_html(path, language)
 
@@ -186,10 +193,10 @@ class RDFtoHTMLConverter(object):
         Make sure the languages specified by the user are the same as those
         encountered in the RDf file.
         """
-        if 'all' in self.specified_languages:
+        if "all" in self.specified_languages:
             return
 
         if self.languages != self.specified_languages:
-            raise LanguageError(self.input_file,
-                                self.specified_languages,
-                                self.languages)
+            raise LanguageError(
+                self.input_file, self.specified_languages, self.languages
+            )

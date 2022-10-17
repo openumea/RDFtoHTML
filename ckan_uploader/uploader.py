@@ -6,9 +6,10 @@ RDF data to a CKAN instance.
 import argparse
 import os
 import tempfile
-import requests
 
 import ckanapi
+import requests
+
 from rdfconv.converter import RDFtoHTMLConverter
 
 
@@ -19,11 +20,12 @@ class RDFLoader(object):
      Args:
             filename: filename of the RDF file
     """
+
     def __init__(self, rdf_path):
         self.conv = RDFtoHTMLConverter()
         self.conv.skip_links = True
         self.conv.load_file(rdf_path)
-        self.nodes = self.conv.get_nodes('en')
+        self.nodes = self.conv.get_nodes("en")
 
     def convert_node(self, rdf_about):
         """
@@ -38,7 +40,7 @@ class RDFLoader(object):
         # Find the node we want
         node = None
         for cur_node in self.nodes:
-            if cur_node['rdf_about'] == rdf_about:
+            if cur_node["rdf_about"] == rdf_about:
                 node = cur_node
                 break
 
@@ -64,8 +66,8 @@ class CKANUploader(object):
                      you want to update
 
         """
-        if not ckan_url.startswith(('http://', 'https://')):
-            ckan_url = 'http://' + ckan_url
+        if not ckan_url.startswith(("http://", "https://")):
+            ckan_url = "http://" + ckan_url
         self.api = ckanapi.RemoteCKAN(ckan_url, apikey=api_key)
         self._fetch_datasets()
 
@@ -78,8 +80,8 @@ class CKANUploader(object):
         self.mapping = {}
         for name in datasets:
             dataset = self.api.action.package_show(id=name)
-            if 'dcat_about' in dataset:
-                self.mapping[dataset['dcat_about']] = name
+            if "dcat_about" in dataset:
+                self.mapping[dataset["dcat_about"]] = name
 
     def update_datasets(self, rdf_path):
         """
@@ -89,12 +91,12 @@ class CKANUploader(object):
             rdf_path: path to an RDF file
         """
         loader = RDFLoader(rdf_path)
-        for rdf_about, ckan_name in self.mapping.iteritems():
+        for rdf_about, ckan_name in self.mapping.items():
             node = loader.convert_node(rdf_about)
             # Node wasn't found in the RDF file so we skip it
             if not node:
                 continue
-            extras = self._convert_to_extras(node['attributes'])
+            extras = self._convert_to_extras(node["attributes"])
             self._update_dataset(ckan_name, rdf_about, extras)
 
     def _update_dataset(self, name, rdf_about, extras):
@@ -108,15 +110,12 @@ class CKANUploader(object):
         current_info = self.api.action.package_show(id=name)
 
         # We need to send the dcat id as an extra
-        extras.append({
-            'key': '_dcat_about_',
-            'value': rdf_about
-        })
-        current_info['extras'] += extras
+        extras.append({"key": "_dcat_about_", "value": rdf_about})
+        current_info["extras"] += extras
 
         # We also need to remove the old dcat stuff
-        del current_info['dcat_fields']
-        del current_info['dcat_about']
+        del current_info["dcat_fields"]
+        del current_info["dcat_about"]
 
         self.api.action.package_update(**current_info)
 
@@ -132,17 +131,21 @@ class CKANUploader(object):
         extras = []
         for attribute in attributes:
             objs = []
-            for obj in attribute['objs']:
-                if 'link' in obj:
-                    objs.append(unicode(obj['link']) + ';' + obj['title'])
+            for obj in attribute["objs"]:
+                if "link" in obj:
+                    objs.append(str(obj["link"]) + ";" + obj["title"])
                 else:
-                    objs.append(';' + obj['title'])
+                    objs.append(";" + obj["title"])
 
-            extras.append({
-                'key': '_dcat_field_' + unicode(attribute['pred_link']) +
-                       ';' + attribute['pred_title'],
-                'value': ';'.join(objs)
-            })
+            extras.append(
+                {
+                    "key": "_dcat_field_"
+                    + str(attribute["pred_link"])
+                    + ";"
+                    + attribute["pred_title"],
+                    "value": ";".join(objs),
+                }
+            )
 
         return extras
 
@@ -153,21 +156,28 @@ def main():
     """
     # Handle arguments
     parser = argparse.ArgumentParser(
-        description='CKAN RDF uploader. Converts data from a RDF file '
-                    'and load it into CKAN for use with the rdf-to-html '
-                    'CKAN extension',)
-    parser.add_argument('ckan_url', metavar='CKAN_URL', type=str,
-                        help='URL to ckan instance')
-    parser.add_argument('api_key', metavar='API_KEY', type=str,
-                        help='API key for a user with write access to the '
-                             'datasets you want to update')
-    parser.add_argument('rdf_file', metavar='RDF_FILE', type=str,
-                        help='Path to the RDF file')
+        description="CKAN RDF uploader. Converts data from a RDF file "
+        "and load it into CKAN for use with the rdf-to-html "
+        "CKAN extension",
+    )
+    parser.add_argument(
+        "ckan_url", metavar="CKAN_URL", type=str, help="URL to ckan instance"
+    )
+    parser.add_argument(
+        "api_key",
+        metavar="API_KEY",
+        type=str,
+        help="API key for a user with write access to the "
+        "datasets you want to update",
+    )
+    parser.add_argument(
+        "rdf_file", metavar="RDF_FILE", type=str, help="Path to the RDF file"
+    )
 
     args = parser.parse_args()
 
     temp_file = False
-    if args.rdf_file.startswith(('http://', 'https://')):
+    if args.rdf_file.startswith(("http://", "https://")):
         rdf_path = download_file(args.rdf_file)
         temp_file = True
     else:
@@ -190,10 +200,11 @@ def download_file(url):
     """
     dcat = requests.get(url)
 
-    _, filename = tempfile.mkstemp(suffix='.rdf')
-    with open(filename, 'w') as file_obj:
+    _, filename = tempfile.mkstemp(suffix=".rdf")
+    with open(filename, "w") as file_obj:
         file_obj.write(dcat.content)
     return filename
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

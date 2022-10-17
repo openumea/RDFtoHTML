@@ -1,15 +1,18 @@
-import BaseHTTPServer
 import sys
 
-HOST_NAME = 'localhost'
+import BaseHTTPServer
+
+HOST_NAME = "localhost"
+
 
 def get_content_type(filename):
-    if filename.endswith('css'):
-        return 'text/css'
-    if filename.endswith('js'):
-        return 'text/javascript'
+    if filename.endswith("css"):
+        return "text/css"
+    if filename.endswith("js"):
+        return "text/javascript"
 
     return "text/html; charset=utf8"
+
 
 class HTMLHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     """
@@ -19,6 +22,7 @@ class HTMLHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     Using the regular web server, files ending with language code (as used by Apache mod_language)
     will be downloaded by the users browser instead of served as an HTML page.
     """
+
     def do_HEAD(s):
         s.send_response(200)
         s.send_header("Content-type", "text/html")
@@ -30,12 +34,13 @@ class HTMLHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                 s.send_response(200)
                 s.send_header("Content-Type", get_content_type(s.path))
                 s.end_headers()
-                s.wfile.write(''.join(f.readlines()))
+                s.wfile.write("".join(f.readlines()))
         except Exception as e:
             # Just send the error message if something goes wrong
             s.send_error(500, message=str(e))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     if len(sys.argv) > 1:
         port = int(sys.argv[1])
     else:

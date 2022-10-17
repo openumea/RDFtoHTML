@@ -3,21 +3,22 @@ Module containing functionallity for resolving predicate names from
 third party sources.
 """
 import logging
-import requests
-import rdflib
-import StringIO
+from io import StringIO
 
-LABEL_CANDIDATES = ['http://www.w3.org/2000/01/rdf-schema#label']
+import rdflib
+import requests
+
+LABEL_CANDIDATES = ["http://www.w3.org/2000/01/rdf-schema#label"]
 
 # All providers don't use the correct way of supplying the rdf
 # so we use this to map the inconsistencies.
 URL_REMAP = {
-    'http://schema.theodi.org/odrs': 'http://schema.theodi.org/odrs/index.ttl',
+    "http://schema.theodi.org/odrs": "http://schema.theodi.org/odrs/index.ttl",
 }
 
 # All providers don't use xml format so here we map other formats
 FORMATS = {
-    'http://schema.theodi.org/odrs': 'n3',
+    "http://schema.theodi.org/odrs": "n3",
 }
 
 
@@ -41,9 +42,9 @@ class PredicateResolver(object):
             if language in self._resolved[url]:
                 # Prefered language found
                 return self._resolved[url][language]
-            elif 'en' in self._resolved[url]:
+            elif "en" in self._resolved[url]:
                 # Fallback to english
-                return self._resolved[url]['en']
+                return self._resolved[url]["en"]
 
     def resolve(self, url, language):
         """
@@ -70,22 +71,22 @@ class PredicateResolver(object):
         """
         # Most providers use # or / for delimiting the identifier from the
         # actual download url
-        if '#' in url:
-            url = url.rsplit('#', 1)[0]
-        elif '/' in url:
-            url = url.rsplit('/', 1)[0]
+        if "#" in url:
+            url = url.rsplit("#", 1)[0]
+        elif "/" in url:
+            url = url.rsplit("/", 1)[0]
 
         # Have we already downloaded and this url?
         if url in self._parsed:
             return
 
-        headers = {'Accept': 'application/rdf+xml'}
+        headers = {"Accept": "application/rdf+xml"}
 
         # Some URLs we've encountered do not provide xml versions of the rdf
         if url in FORMATS:
             rdf_format = FORMATS[url]
         else:
-            rdf_format = 'xml'
+            rdf_format = "xml"
 
         # Some URLs also do not follow the standard way of requesting a
         # the resource on a different format. They do however provide
@@ -93,34 +94,35 @@ class PredicateResolver(object):
         if url in URL_REMAP:
             url = URL_REMAP[url]
 
-        logging.info('Downloading %s', url)
+        logging.info("Downloading %s", url)
         try:
+            return
             resp = requests.get(url, headers=headers)
         except Exception as err:  # pylint: disable=W0703
             # We want to catch all exceptions here
-            logging.warning('Unable to download %s. %s', url, err.message)
+            logging.warning("Unable to download %s. %s", url, err)
             return
 
-        file_obj = StringIO.StringIO()
-        file_obj.write(resp.text.encode('utf-8'))
+        file_obj = StringIO()
+        file_obj.write(resp.text)
         file_obj.seek(0)
 
         graph = rdflib.Graph()
         try:
-            graph.load(file_obj, format=rdf_format)
+            graph.parse(file_obj, format=rdf_format)
         except Exception as err:  # pylint: disable=W0703
             # We want to catch all exceptions here
-            logging.warning('Unable to parse file: %s. %s', url, err.message)
+            logging.warning("Unable to parse file: %s. %s", url, err)
         for subj, pred, obj in graph:
 
-            if isinstance(obj, rdflib.Literal) and unicode(pred) in LABEL_CANDIDATES:
-                subj = unicode(subj)
+            if isinstance(obj, rdflib.Literal) and str(pred) in LABEL_CANDIDATES:
+                subj = str(subj)
                 if subj not in self._resolved:
                     self._resolved[subj] = {}
                 if obj.language:
                     language = obj.language
                 else:
-                    language = 'en'
-                self._resolved[subj][language] = unicode(obj.value).title()
+                    language = "en"
+                self._resolved[subj][language] = str(obj.value).title()
 
         self._parsed.append(url)
